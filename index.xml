@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Cactus Theme</title>
+    <link>https://lbowl.github.io/hugoblog/</link>
+    <description>Recent content on Hugo Cactus Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Sep 2016 20:03:14 +0800</lastBuildDate>
+    <atom:link href="https://lbowl.github.io/hugoblog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>about</title>
+      <link>https://lbowl.github.io/hugoblog/about/</link>
+      <pubDate>Thu, 08 Sep 2016 20:03:14 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m simply complex.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fullpage.js</title>
+      <link>https://lbowl.github.io/hugoblog/post/fullpage_Fullpage-js/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/fullpage_Fullpage-js/</guid>
+      <description>
+
+&lt;h1 id=&#34;简介&#34;&gt;简介&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/riddledle/fullPage.js&#34;&gt;Fullpage.js&lt;/a&gt; (github repository)是一个多浏览器兼容的插件&lt;/p&gt;
+
+&lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;包括jQuery library&lt;/li&gt;
+&lt;li&gt;包括jquery.fullpage.js/jquery.fullpage.min.js&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;包括jquery.fullpage.css&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;HTML结构&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ &amp;lt;div id=&amp;quot;fullpage&amp;quot;&amp;gt; 
+    &amp;lt;div class=&amp;quot;section active&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
+    &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
+    &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
+    &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
+ &amp;lt;/div&amp;gt; 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;使用slider&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt; 
+    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 1 &amp;lt;/div&amp;gt; 
+    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 2 &amp;lt;/div&amp;gt; 
+    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 3 &amp;lt;/div&amp;gt; 
+    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 4 &amp;lt;/div&amp;gt; 
+ &amp;lt;/div&amp;gt; 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;初始化&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ $(document).ready(function() { 
+    $(&#39;#fullpage&#39;).fullpage(); 
+ }); 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;插入音频/视频
+使用 &lt;code&gt;data-autoplay&lt;/code&gt; 属性使音频/视频能够自动播放, &lt;code&gt;data-keepplaying&lt;/code&gt; 属性使离开某页时音频/视频继续播放。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ &amp;lt;audio data-autoplay&amp;gt; 
+    &amp;lt;source src=&amp;quot;http://metakoncept.hr/horse.ogg&amp;quot; type=&amp;quot;audio/ogg&amp;quot;&amp;gt; 
+ &amp;lt;/audio&amp;gt; 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;实例
+&lt;a href=&#34;http://www.yourprimer.com/&#34;&gt;google&lt;/a&gt;
+&lt;a href=&#34;https://mcdonalds.com.au/create-your-taste&#34;&gt;McDonalds&lt;/a&gt;
+&lt;a href=&#34;http://www.sony-asia.com/microsite/mdr-10/#ncPage&#34;&gt;sony&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Injecting a line break</title>
+      <link>https://lbowl.github.io/hugoblog/post/CSSTRICKS_Injecting-a-line-break-%E6%8F%92%E5%85%A5%E4%B8%80%E4%B8%AA%E8%BD%AC%E8%A1%8C/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/CSSTRICKS_Injecting-a-line-break-%E6%8F%92%E5%85%A5%E4%B8%80%E4%B8%AA%E8%BD%AC%E8%A1%8C/</guid>
+      <description>
+
+&lt;h1 id=&#34;如何插入一个转行-https-css-tricks-com-injecting-line-break-more-241954-来自css-tricks-com&#34;&gt;&lt;a href=&#34;https://css-tricks.com/injecting-line-break/#more-241954&#34;&gt;如何插入一个转行&lt;/a&gt;,来自CSS-TRICKS.COM&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;h1 class=&amp;quot;one&amp;quot;&amp;gt; 
+
+  Break right after this
+
+  &amp;lt;!-- &amp;lt;br&amp;gt; could go here, but can we do it with CSS? --&amp;gt;
+
+  &amp;lt;span&amp;gt;
+    and before this
+  &amp;lt;/span&amp;gt;
+
+&amp;lt;/h1&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;method-1-用-div-代替-span&#34;&gt;METHOD 1：用 &lt;code&gt;div&lt;/code&gt; 代替 &lt;code&gt;span&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;BUT：块级元素的设计和行内元素的设计初衷相违背；&lt;/p&gt;
+
+&lt;h2 id=&#34;method-2-用伪元素-before-来完成-在文始加一个转义字符-a&#34;&gt;METHOD 2:用伪元素 &lt;code&gt;::before&lt;/code&gt; 来完成，在文始加一个转义字符 &lt;code&gt;\A&lt;/code&gt;&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+h1 span::before {
+
+  content: &amp;quot;\A&amp;quot;;
+
+} 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;BUT：这对行内元素来说没有用。&lt;/p&gt;
+
+&lt;h2 id=&#34;method-3-在以上方法下-使空白符有意义-即-white-space-pre&#34;&gt;METHOD 3:在以上方法下，使空白符有意义。即 &lt;code&gt;white-space:pre&lt;/code&gt;&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+h1.two span::before {
+
+  content: &amp;quot;\A&amp;quot;;
+
+  white-space: pre; 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;BUT：在第一行行末留下了一小块痕迹&lt;/p&gt;
+
+&lt;h2 id=&#34;method-4-将-span-先变为块级元素-然后用伪元素-before-来写入文字-并且设计它的内边距等样式&#34;&gt;METHOD 4:将 &lt;code&gt;span&lt;/code&gt; 先变为块级元素，然后用伪元素 &lt;code&gt;::before&lt;/code&gt; 来写入文字，并且设计它的内边距等样式。&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+h1 span {
+
+  display: block;
+
+}
+
+h1 span::before {
+
+  content: attr(data-text);
+
+  background: black;
+
+  padding: 1px 8px;
+
+} 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;method-5-直接设置-span-为-display-table&#34;&gt;METHOD 5：直接设置 &lt;code&gt;span&lt;/code&gt; 为 &lt;code&gt;display:table&lt;/code&gt;&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+h1 span {
+
+  display: table;
+
+} 
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;method-6-使用-flex-box&#34;&gt;METHOD 6:使用 &lt;code&gt;flex box&lt;/code&gt;&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+h1.nine {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  span {
+
+        background: black;
+
+        padding: 1px 8px;
+
+  }
+
+} 
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JWplayer</title>
+      <link>https://lbowl.github.io/hugoblog/post/jwplayer_JWplayer-developer-guide/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/jwplayer_JWplayer-developer-guide/</guid>
+      <description>
+
+&lt;h1 id=&#34;jwplayer&#34;&gt;JWplayer&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注册一个账号&lt;/li&gt;
+&lt;li&gt;本地上传MP4/FLV/AVI格式的视频或通过视频的URL上传，至Playlist&lt;/li&gt;
+&lt;li&gt;修改视频的description、tag等信息；修改Player的样式信息&lt;/li&gt;
+&lt;li&gt;调出publish mode，把EMBED处的代码复制粘贴至code里（分script和iframe两种）&lt;/li&gt;
+&lt;li&gt;运行调试没有问题后，在dashboard板块下的analytics里追踪视频的信息。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;jw-player-developer-guide-https-developer-jwplayer-com-jw-player-docs-developer-guide&#34;&gt;&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/&#34;&gt;JW Player Developer Guide&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;jwplayer说明文档的developer guide的Introduction和Intro to Javascript API部分。&lt;/p&gt;
+
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+
+&lt;p&gt;Hello world！我们是JWPLAYER。我们致力于使（你这样的）开发者与设计者为网页、手机、OTT电视的观众建设、个性化、发布最佳观赏体验的视频。&lt;/p&gt;
+
+&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
+
+&lt;p&gt;我们希望提供一份使用JWPLAYER高级功能的说明文档。你将获得巩固的API和设计资源检索以加快你的播放器开发进程。&lt;/p&gt;
+
+&lt;h3 id=&#34;目标用户&#34;&gt;目标用户&lt;/h3&gt;
+
+&lt;p&gt;此页主要面向在工程中使用JWPLAYER的开发者和设计者。需了解标准设定和如何嵌入播放器，请参考&lt;a href=&#34;https://support.jwplayer.com/&#34;&gt;支持文档&lt;/a&gt;。如果你要浏览开发者页，则需要基础的JAVASCRIPT能力以使用API，且需要CSS知识以丰富基础的模型。&lt;/p&gt;
+
+&lt;h3 id=&#34;结构&#34;&gt;结构&lt;/h3&gt;
+
+&lt;p&gt;此开发指导分为两块：JAVASCRIPT API（即将到来）和视觉优化。每部分包含起步、说明文档、示例代码、小样链接、附加资源。&lt;/p&gt;
+
+&lt;h3 id=&#34;联系我们&#34;&gt;联系我们&lt;/h3&gt;
+
+&lt;p&gt;如果在开发者页找不到你需要的资源：
+ - 我们定期管理&lt;a href=&#34;https://stackoverflow.com/questions/tagged/jwplayer&#34;&gt;StackOverflow&lt;/a&gt;上的问题。
+ - 我们欢迎你为&lt;a href=&#34;https://github.com/jwplayer/jwplayer&#34;&gt;GITHUB&lt;/a&gt;上的开源代码做贡献。
+ - 联系我们的TWITTER&lt;a href=&#34;https://twitter.com/JWDevelopers&#34;&gt;JWDevelopers&lt;/a&gt;。
+ - 我们会通过邮件给予反馈（或者一个新的喵视频！）devrelation@jwplayer.com&lt;/p&gt;
+
+&lt;h2 id=&#34;javascript-api简介&#34;&gt;JAVASCRIPT API简介&lt;/h2&gt;
+
+&lt;p&gt;此文简介了如何使用JWPLAYER的&lt;a href=&#34;http://www.jwplayer.com/products/jwplayer/javascript/&#34;&gt;JAVASCRIPT API&lt;/a&gt;。它可以使你增强你嵌入的播放器的功能，或者实现丰富的页面级别的交互。除非标注，否则Flash和HTML5 的API命令没有区别，因此你的代码可以跨技术域工作。
+注：我们强烈建议所有API命令在播放器准备完毕后运行。&lt;/p&gt;
+
+&lt;h3 id=&#34;通过jwplayer-api获取信息&#34;&gt;通过JWPLAYER API获取信息&lt;/h3&gt;
+
+&lt;p&gt;特定的API命令使用“get”前缀，标明它们的直接目的是返回特定信息。可以是对象，数组，字符串，数字。参考&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/&#34;&gt;Javascript API Reference&lt;/a&gt;查看返回形式。&lt;/p&gt;
+
+&lt;h4 id=&#34;get-api命令返回如下形式信息&#34;&gt;&amp;ldquo;GET&amp;rdquo;API命令返回如下形式信息：&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;用jwplayer().getPlaylist()获得播放列表项目的数组；&lt;/li&gt;
+&lt;li&gt;用jwplayer().getDuration()获得视频时长；&lt;/li&gt;
+&lt;li&gt;用jwplayer().getsState()获得播放器状态；&lt;/li&gt;
+&lt;li&gt;用jwplayer().getHeight()和jwplayer.getWidth()获得当前播放器的像素规模。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;控制和设置jwplayer-api&#34;&gt;控制和设置JWPLAYER API&lt;/h4&gt;
+
+&lt;p&gt;以下命令用来控制播放器行为。大部分命令需要一个传入值。比如，setVolume()需要一个1-100的数字传入。&lt;/p&gt;
+
+&lt;h4 id=&#34;api命令可以使播放器&#34;&gt;API命令可以使播放器：&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;用jwplayer().pause(true)停止播放；&lt;/li&gt;
+&lt;li&gt;用jwplayer().setVolume(50)设置音量为50%；&lt;/li&gt;
+&lt;li&gt;用jwplayer().seek(120)获得视频2分钟的位置。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;通过jwplayer-api实现事件监听&#34;&gt;通过JWPLAYER API实现事件监听&lt;/h3&gt;
+
+&lt;p&gt;播放器做什么的时候会触发特定事件。JWP7基于&lt;a href=&#34;http://backbonejs.org/#Events&#34;&gt;backbone.events&lt;/a&gt;实现事件结构。使一个播放器实例成为事件引导并给予开发者更好的选项和控制。特定事件同样返回信息。指定信息在&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/&#34;&gt;javascript API reference&lt;/a&gt;文档中。
+目前JWP支持以下事件驱动：
+&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/listener.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以下事件驱动在每次音量改动时触发，并返回一个带名叫&amp;rdquo;volume&amp;rdquo;的数字的对象。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+jwplayer().on(&#39;volume&#39;, function(e) {
+
+    alert(&amp;quot;Volume is changed to: &amp;quot;+ e.volume);
+
+                                    });
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;示例-使用jwp&#34;&gt;示例：使用JWP&lt;/h3&gt;
+
+&lt;p&gt;player setup需要在实现播放器互动前安装。&lt;a href=&#34;https://support.jwplayer.com/customer/portal/topics/601065-embedding/articles&#34;&gt;Embedding Section&lt;/a&gt;包含许多例子。这是一个基础播放器嵌入的标准语法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;div id=&#39;myElement&#39;&amp;gt;Loading the player...&amp;lt;/div&amp;gt; 
+
+&amp;lt;script type=&#39;text/javascript&#39;&amp;gt;
+
+jwplayer(&amp;quot;myElement&amp;quot;).setup({ 
+
+    &amp;quot;file&amp;quot;: &amp;quot;/uploads/example.mp4&amp;quot;, 
+
+    &amp;quot;image&amp;quot;: &amp;quot;/uploads/example.jpg&amp;quot;
+
+});
+
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一旦实现setup，API立刻就能用。如果你的页面内有一个播放器，它总能被playerInstance函数获取。比如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;script&amp;gt;
+
+jwplayer(&amp;quot;myElement&amp;quot;).on(&#39;complete&#39;, function(){
+
+    alert(&amp;quot;Complete fired - Your content has completed!&amp;quot;);
+
+});
+
+&amp;lt;/script&amp;gt;
+
+&amp;lt;a href=&amp;quot;javascript:jwplayer(&#39;myElement&#39;).play();&amp;quot;&amp;gt;Toggle playback&amp;lt;/a&amp;gt;
+
+&amp;lt;a href=&amp;quot;javascript:alert(&#39;The volume of the player is: &#39; + jwplayer(&#39;myElement&#39;).getVolume());&amp;quot;&amp;gt;Report volume&amp;lt;/a&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;多个播放器下指定&#34;&gt;多个播放器下指定&lt;/h3&gt;
+
+&lt;p&gt;当页面内有多个播放器，你需要指定你要和哪个交互。假设我们一个页面内嵌入了两个不同的播放器：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;div id=&#39;myFirstPlayer&#39;&amp;gt;Loading the first player...&amp;lt;/div&amp;gt;
+
+&amp;lt;div id=&#39;mySecondPlayer&#39;&amp;gt;Loading the player...&amp;lt;/div&amp;gt;
+
+
+&amp;lt;script type=&#39;text/javascript&#39;&amp;gt;
+
+jwplayer(&amp;quot;myFirstPlayer&amp;quot;).setup({ 
+
+    &amp;quot;file&amp;quot;: &amp;quot;/uploads/example.mp4&amp;quot;, 
+
+    &amp;quot;image&amp;quot;: &amp;quot;/uploads/example.jpg&amp;quot;
+
+});
+
+jwplayer(&amp;quot;mySecondPlayer&amp;quot;).setup({ 
+
+    &amp;quot;file&amp;quot;: &amp;quot;/uploads/example2.mp4&amp;quot;, 
+
+    &amp;quot;image&amp;quot;: &amp;quot;/uploads/example2.jpg&amp;quot;
+
+});
+
+&amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;有两种方法来指定一个播放器：
+ * 使用div的id&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+// ID references the first player
+
+jwplayer(&amp;quot;myFirstPlayer&amp;quot;).play();
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;使用播放器index&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;
+// An index of 1 targets the second player on the page 
+
+jwplayer(1).play();
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;注：什么都不标明的话，将指向页面内第一个播放器。&lt;/p&gt;
+
+&lt;h3 id=&#34;require-js和jwplayer&#34;&gt;Require.js和JWPLAYER&lt;/h3&gt;
+
+&lt;p&gt;JWPLAYER目前不被require js支持因为JWPLAYER需要自己的命名空间。避免require和jwplayer.js在同一页面时的问题，在require.js之前加载jwplayer.js。
+例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;script src=&#39;jwplayer.js&#39;&amp;gt;
+
+&amp;lt;script src=&#39;requirejs.js&#39;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;小记表&#34;&gt;小记表&lt;/h3&gt;
+
+&lt;p&gt;这张表是所有API命令的小抄。&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/&#34;&gt;JAVASCRIPT API Reference&lt;/a&gt;包含了所有API命令的参数。点击相应类名转到对应查询。为了简化，我们只介绍on事件。如上所述，还可以是off,once,trigger事件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160524153029.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/sheet2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandoc</title>
+      <link>https://lbowl.github.io/hugoblog/post/Pandoc_Pandoc/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/Pandoc_Pandoc/</guid>
+      <description>
+
+&lt;h1 id=&#34;使用-pandoc-http-www-pandoc-org-getting-started-html-实现markdown文件和html文件之间的转换&#34;&gt;使用&lt;a href=&#34;http://www.pandoc.org/getting-started.html&#34;&gt;Pandoc&lt;/a&gt;实现markdown文件和html文件之间的转换。&lt;/h1&gt;
+
+&lt;h1 id=&#34;参考官方文档-以windows系统为例&#34;&gt;参考官方文档，以windows系统为例。&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;安装。（WIN8系统下建议在命令提示符下以管理员身份运行安装程序）&lt;/li&gt;
+&lt;li&gt;打开命令提示符&lt;/li&gt;
+&lt;li&gt;切换目录。
+
+&lt;ul&gt;
+&lt;li&gt;cd Documents 至文档目录下&lt;/li&gt;
+&lt;li&gt;mkdir &amp;lt;目录名&amp;gt; 新建目录文件夹&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;在命令行转换。
+
+&lt;ul&gt;
+&lt;li&gt;输入pandoc&lt;/li&gt;
+&lt;li&gt;输入markdown/html语法文档&lt;/li&gt;
+&lt;li&gt;按下Ctrl-Z，回车
+(默认是认为传入markdown语法，转换为html语法)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;使用编辑器在目录下编辑一个文件&lt;/li&gt;
+&lt;li&gt;使用语法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt; 
+ pandoc test1.md -f markdown -t html -s -o test1.html 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;转换&lt;/p&gt;
+
+&lt;h1 id=&#34;查看-user-s-guide-http-www-pandoc-org-readme-html-获取更多关于转换格式的内容&#34;&gt;查看&lt;a href=&#34;http://www.pandoc.org/README.html&#34;&gt;User&amp;rsquo;s Guide&lt;/a&gt;获取更多关于转换格式的内容。&lt;/h1&gt;
+
+&lt;p&gt;若是想转为PDF格式，需要&lt;a href=&#34;http://www.latex-project.org/&#34;&gt;Latex&lt;/a&gt;支持。&lt;/p&gt;
+
+&lt;h1 id=&#34;将markdown文件转换为pdf文件则可以使用-mdcharm-http-www-mdcharm-com&#34;&gt;将markdown文件转换为pdf文件则可以使用&lt;a href=&#34;http://www.mdcharm.com/&#34;&gt;MdCharm&lt;/a&gt;。&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Responsive Design</title>
+      <link>https://lbowl.github.io/hugoblog/post/responsive-design_Responsive-Design/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/responsive-design_Responsive-Design/</guid>
+      <description>
+
+&lt;h1 id=&#34;responsive-design-tutorial-http-webdesignerwall-com-tutorials-responsive-design-with-css3-media-queries&#34;&gt;&lt;a href=&#34;http://webdesignerwall.com/tutorials/responsive-design-with-css3-media-queries&#34;&gt;Responsive Design Tutorial&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h1 id=&#34;导语&#34;&gt;导语&lt;/h1&gt;
+
+&lt;p&gt;如今屏幕分辨率从320px（iPhone）到2560px(大显示器)甚至更高。用户不仅仅通过桌面电脑浏览网页。用户会使用手机，小型笔记本，或是iPad，Playbook来上网。所以传统页面再也不适用了。网页设计要自适应。布局需要自动适应不同分辨率设备。这是一篇让你用H5和CSS3 media queries来设计跨浏览器响应式布局的指导。&lt;/p&gt;
+
+&lt;h1 id=&#34;先来看看效果&#34;&gt;先来看看效果&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/image/hexo/final-demo.jpg&#34; alt=&#34;&#34; /&gt;
+开始之前来看看&lt;a href=&#34;http://webdesignerwall.com/demo/adaptive-design/final.html&#34;&gt;最终小样&lt;/a&gt;,改变你的浏览器大小查看页面是如何适应不同的视口宽度。&lt;/p&gt;
+
+&lt;h1 id=&#34;概览&#34;&gt;概览&lt;/h1&gt;
+
+&lt;p&gt;这个页面的container宽为980px，为任何大于1024px的分辨率达到最优。Media queary检查视口是否窄于980px,是则转固定宽度为流动宽度。低于650px，内容框和侧框将占满屏宽，并形成一列。
+&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/image/hexo/design-overview.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;html-code&#34;&gt;HTML CODE&lt;/h1&gt;
+
+&lt;p&gt;我不会详细分析这个代码，这是布局的结构。我用pagewrap来包含header,content,sidebar,footer。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/recode.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我在小样里用了H5，为IE9以下版本增加html5.js:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--[if lt IE 9]&amp;gt;
+
+&amp;lt;script src=&amp;quot;http://html5shim.googlecode.com/svn/trunk/html5.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;![endif]--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;css&#34;&gt;CSS&lt;/h1&gt;
+
+&lt;p&gt;用以下的CSS将H5元素重设为block。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+
+    display: block;
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;主pagewrap宽980px，header固定高160px，content是600px宽，左浮动。sidebar是280px宽右浮动。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#pagewrap {
+
+    width: 980px;
+
+    margin: 0 auto;
+
+}
+
+#header {
+
+    height: 160px;
+
+}
+
+#content {
+
+    width: 600px;
+
+    float: left;
+
+}
+
+
+#sidebar {
+
+    width: 280px;
+
+    float: right;
+
+}
+
+#footer {
+
+    clear: both;
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;css3-media-query&#34;&gt;CSS3&amp;amp;media query&lt;/h1&gt;
+
+&lt;p&gt;现在来到有趣的部分 - Media query。
+IE8以下不支持,因而加入Media queries javascript:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--[if lt IE 9]&amp;gt;
+
+    &amp;lt;script src=&amp;quot;http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;![endif]--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;创建media queries的新样式表：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;link href=&amp;quot;media-queries.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;窄于980px的视口(流动布局)&lt;/p&gt;
+
+&lt;p&gt;应用以下规则：&lt;/p&gt;
+
+&lt;p&gt;pagewrap = 重设宽为 95%&lt;/p&gt;
+
+&lt;p&gt;content = 重设为 60%&lt;/p&gt;
+
+&lt;p&gt;sidebar = 重设为 30%&lt;/p&gt;
+
+&lt;p&gt;提示：用百分比设置来使容器流动。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+@media screen and (max-width: 980px) {
+
+    #pagewrap {
+
+        width: 95%;
+
+    }
+
+    #content {
+
+        width: 60%;
+
+        padding: 3% 4%;
+
+    }
+
+    #sidebar {
+
+        width: 30%;
+
+    }
+
+    #sidebar .widget {
+
+        padding: 8% 7%;
+
+        margin-bottom: 10px;
+
+    }
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;小于650Px的视口(单独成列布局)&lt;/p&gt;
+
+&lt;p&gt;header = 重设高度为auto&lt;/p&gt;
+
+&lt;p&gt;searchform = 将searchform重定位于据顶部5px&lt;/p&gt;
+
+&lt;p&gt;main-nav = 重设position为static&lt;/p&gt;
+
+&lt;p&gt;site-logo = 重设position为static&lt;/p&gt;
+
+&lt;p&gt;site-description = 重设position为static&lt;/p&gt;
+
+&lt;p&gt;content = 重设宽度为auto(这将使宽度为满宽)并且脱离流&lt;/p&gt;
+
+&lt;p&gt;sidebar = 重设宽度为100%并且脱离流&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@media screen and (max-width: 650px) {
+
+    #header {
+
+        height: auto;
+
+    }
+
+
+    #searchform {
+
+        position: absolute;
+
+        top: 5px;
+
+        right: 0;
+
+    }
+
+
+    #main-nav {
+
+        position: static;
+
+    }
+
+    #site-logo {
+
+        margin: 15px 100px 5px 0;
+
+        position: static;
+
+    }
+
+    #site-description {
+
+        margin: 0 0 15px;
+
+        position: static;
+
+    }
+
+    #content {
+
+        width: auto;
+
+        float: none;
+
+        margin: 20px 0;
+    }
+
+    #sidebar {
+
+        width: 100%;
+
+        float: none;
+
+        margin: 0;
+    }
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;窄于480px的视口&lt;/p&gt;
+
+&lt;p&gt;iPhone横置状态下&lt;/p&gt;
+
+&lt;p&gt;html = 禁用字体自适应。iPhone默认自动调节字体使你阅读得更舒服。你可以禁用它，用-webkit-text-size-adjust: none;语句。&lt;/p&gt;
+
+&lt;p&gt;main-nav = 重设字体大小为90%&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+@media screen and (max-width: 480px) {
+
+    html {
+
+        -webkit-text-size-adjust: none;
+
+    }
+
+    #main-nav a {
+
+        font-size: 90%;
+
+        padding: 10px 8px;
+
+    }
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;灵活的图片&lt;/p&gt;
+
+&lt;p&gt;为了使图片灵活，只需设置max-width = 100%，height = auto。&lt;/p&gt;
+
+&lt;p&gt;IE8不支持，添加width:auto\9；&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    width: auto\9; /* ie8 */
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;灵活的音频&lt;/p&gt;
+
+&lt;p&gt;如上。&lt;/p&gt;
+
+&lt;p&gt;Safari用width:100%代替。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+.video embed,
+
+.video object,
+
+.video iframe {
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;初始化scale meta标签(iPhone)&lt;/p&gt;
+
+&lt;p&gt;默认下iPhone的Safari收缩HTML页面来适应屏幕。以下标签使之将设备屏宽定为页面视口宽度，取消初始规模。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width; initial-scale=1.0&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;
+
+&lt;p&gt;不支持media queries的浏览器添加此js：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;!--[if lt IE 9]&amp;gt;
+    
+&amp;lt;script src=&amp;quot;http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;![endif]--&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;响应式设计的技巧即是根据视口宽度重载布局结构的CSS&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+@media screen and (max-width: 560px) {
+
+    #content {
+
+        width: auto;
+
+        float: none;
+
+    }
+
+
+    #sidebar {
+
+        width: 100%;
+
+        float: none;
+    }
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;灵活的图片&amp;amp;音频&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+max-width:100% height:auto
+
+img {
+
+    max-width: 100%;
+
+    height: auto;
+
+    width: auto\9; /* ie8 */
+
+}
+
+-webkit-text-size-adjust:none来应付iPhone的字体调节
+
+html {
+
+    -webkit-text-size-adjust: none;
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;重置iPhone的视口和初始规模&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width; initial-scale=1.0&amp;quot;&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Some fonts reference</title>
+      <link>https://lbowl.github.io/hugoblog/post/hexo_Hexo%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/hexo_Hexo%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9/</guid>
+      <description>
+
+&lt;h1 id=&#34;some-fonts-references&#34;&gt;Some fonts references&lt;/h1&gt;
+
+&lt;h2 id=&#34;chinese-fonts&#34;&gt;Chinese fonts&lt;/h2&gt;
+
+&lt;p&gt;Typically chinese font names are not allowed in css thus use the following sheet as a reference:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ 新细明体：PMingLiU  
+ 细明体：MingLiU 
+ 标楷体：DFKai-SB  
+ 黑体：SimHei 
+ 宋体：SimSun 
+ 新宋体：NSimSun  
+ 仿宋：FangSong  
+ 楷体：KaiTi 
+ 仿宋_GB2312：FangSong_GB2312  
+ 楷体_GB2312：KaiTi_GB2312 
+ 微软正黑体：Microsoft JhengHei  
+ 微软雅黑体：Microsoft YaHei  
+
+ 隶书：LiSu 
+ 幼圆：YouYuan 
+ 华文细黑：STXihei 
+ 华文楷体：STKaiti  
+ 华文宋体：STSong 
+ 华文中宋：STZhongsong  
+ 华文仿宋：STFangsong  
+ 方正舒体：FZShuTi  
+ 方正姚体：FZYaoti  
+ 华文彩云：STCaiyun  
+ 华文琥珀：STHupo 
+ 华文隶书：STLiti 
+ 华文行楷：STXingkai  
+ 华文新魏：STXinwei  
+
+ 华文细黑：STHeiti Light [STXihei]  
+ 华文黑体：STHeiti 
+ 华文楷体：STKaiti 
+ 华文宋体：STSong 
+ 华文仿宋：STFangsong 
+ 丽黑 Pro：LiHei Pro Medium 
+ 丽宋 Pro：LiSong Pro Light  
+ 标楷体：BiauKai 
+ 苹果丽中黑：Apple LiGothic Medium  
+ 苹果丽细宋：Apple LiSung Light 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;download-fonts&#34;&gt;Download fonts&lt;/h2&gt;
+
+&lt;p&gt;Choose fonts from these websites and download for free
+&lt;a href=&#34;www.showfont.net&#34;&gt;showfont&lt;/a&gt;
+&lt;a href=&#34;www.dafont.com&#34;&gt;dafont&lt;/a&gt;
+&lt;a href=&#34;www.ddfont.com&#34;&gt;ddfont&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;modifying-hexo&#34;&gt;Modifying(hexo)&lt;/h1&gt;
+
+&lt;p&gt;Modify the corresponding css files in themes/layout directories has been failed on my machine.
+I made it by changing the style.css file in &amp;lsquo;public&amp;rsquo;folder in my hexo directory.
+Basically add the font name which you want to use in &amp;lsquo;font-family&amp;rsquo; attr before any other font names.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>VIKI页面</title>
+      <link>https://lbowl.github.io/hugoblog/post/VIKI_viki/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/VIKI_viki/</guid>
+      <description>
+
+&lt;h1 id=&#34;安装viki&#34;&gt;安装VIKI&lt;/h1&gt;
+
+&lt;h2 id=&#34;配置&#34;&gt;配置&lt;/h2&gt;
+
+&lt;p&gt;Vim+deplate&lt;/p&gt;
+
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;编辑一套模板，可参考&lt;a href=&#34;http://edyfox.codecarver.org/html/viki_template.html&#34;&gt;edyfox&lt;/a&gt;的。&lt;/li&gt;
+&lt;li&gt;创建.viki文件，可以TAG_FILENAME.VIKI格式命名。&lt;/li&gt;
+&lt;li&gt;使用Vim编辑。可在开头第一行加入#TITLE: TITLE 指定页面标题，第二行加入#KEYWORDS: KEYWORDS 指定该页标签&lt;/li&gt;
+&lt;li&gt;使用VIKI语法撰写页面内容&lt;/li&gt;
+&lt;li&gt;在命令行执行deplate -t TEMPLATE.html &amp;ndash;css CSSNAME FILENAME.viki生成html文件；也可执行此&lt;a href=&#34;http://edyfox.codecarver.org/html/viki_script.html#labVikiScript&#34;&gt;编译脚本&lt;/a&gt;批量编译
+
+&lt;ul&gt;
+&lt;li&gt;注意输出目录。可修改TARGET_DIR一行&lt;/li&gt;
+&lt;li&gt;注意文字编码。可修改ARGS一行
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://lbowl.github.io/hugoblog/post/Vim_Vim/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/Vim_Vim/</guid>
+      <description>
+
+&lt;h1 id=&#34;使用vim&#34;&gt;使用Vim&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.vim.org/download.php&#34;&gt;Vim&lt;/a&gt;是一款Linux上的优秀经典的文本/代码编辑器。gVim是其Windows版。&lt;/p&gt;
+
+&lt;p&gt;最大特色是完全使用键盘命令进行编辑，脱离鼠标操作。&lt;/p&gt;
+
+&lt;p&gt;安装完成后使用:help tutor命令或者从安装目录Vim/vim74/tutor下打开说明文档（可选中文版）。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.vgod.tw.s3.amazonaws.com/wp-content/uploads/2014/08/vgod-vim-cheat-sheet-full.pdf&#34;&gt;一张Vim命令图解&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/vimbg.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;配置&#34;&gt;配置&lt;/h1&gt;
+
+&lt;p&gt;配置使用时编写一份自己的.vimrc，Vim便不会再加载系统默认的配置文件。可在配置中编写字体样式，配色方案，文档格式，键盘操作等。&lt;/p&gt;
+
+&lt;h1 id=&#34;插件&#34;&gt;插件&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.vim.org/scripts/index.php&#34;&gt;Vim插件&lt;/a&gt;丰富。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;vimperator.org&#34;&gt;Vimperator&lt;/a&gt;是Firefox上一款类Vim操作的界面交互插件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/vimp.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/vimperator_hints.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vim Key Map</title>
+      <link>https://lbowl.github.io/hugoblog/post/Vim_Key-map/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/Vim_Key-map/</guid>
+      <description>
+
+&lt;h1 id=&#34;mapping-keys-in-vim-http-vim-wikia-com-wiki-mapping-keys-in-vim-tutorial-part-1&#34;&gt;&lt;a href=&#34;http://vim.wikia.com/wiki/Mapping_keys_in_Vim_-_Tutorial_(Part_1)&#34;&gt;Mapping keys in Vim&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;This is the official tutorial for key mappings in vim.&lt;/p&gt;
+
+&lt;h2 id=&#34;modes&#34;&gt;Modes&lt;/h2&gt;
+
+&lt;p&gt;Vim has many modes,these 3 and their corresponding mappings are basic:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ n Normal mode - &#39;:nmap&#39; or &#39;:nnoremap&#39; 
+ i Insert mode - &#39;:imap&#39; or &#39;:inoremap&#39; 
+ v Visual and select mode - &#39;:vmap&#39; or &#39;vnoremap&#39; 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;the-general-syntax&#34;&gt;The general syntax&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;
+ {cmd}  {attr}  {lhs}  {rhs} 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;storing-the-key-maps&#34;&gt;Storing the key maps&lt;/h2&gt;
+
+&lt;p&gt;For permanent use just store the map commands in $HOME/.vimrc(or $HOME/_vimrc or $VIM/_vimrc)file.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NOTICE:No need to add the prefix &amp;lsquo;:&amp;rsquo; character&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;map&#34;&gt;Map &lt;code&gt;&#39;&#39;&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Since the &amp;ldquo; character is used to seperate a map command from the next command,there&amp;rsquo;re 3 ways to include a &amp;rdquo; in {rhs}&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+     &amp;lt;Bar&amp;gt;  - works when &#39;&amp;lt;&#39;is not in &#39;cpoptions&#39; 
+     \\    - works when &#39;b&#39; is not in &#39;cpoptions&#39; 
+     ^V    - always works,in Vim and Vi 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(here ^V stands for CTRL-V; to get one CTRL-V you have to type it twice; you
+cannot use the &amp;lt;&amp;gt; notation &amp;ldquo;&lt;C-V&gt;&amp;rdquo; here).&lt;/p&gt;
+
+&lt;p&gt;All three work when you use the default setting for &amp;lsquo;cpoptions&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;http://vimdoc.sourceforge.net/htmldoc/map.html#map-which-keys&#34;&gt;:help map-which-keys&lt;/a&gt; for more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Websites We Like</title>
+      <link>https://lbowl.github.io/hugoblog/post/websites_Websites-We-Like/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/websites_Websites-We-Like/</guid>
+      <description>
+
+&lt;h1 id=&#34;websites-we-like推荐你喜欢的网页-https-css-tricks-com-websites-we-like-june-2016&#34;&gt;&lt;a href=&#34;https://css-tricks.com/websites-we-like-june-2016/&#34;&gt;Websites We Like推荐你喜欢的网页&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;来自CSS-TRICKS的一篇推荐你所喜欢的网页的帖子。 ROBIN RENDLE发起。原句是“take a look at the weird and peculiar,the shocking and downright odd;websites that spark our interest and make us double-take.”
+意思为欣赏一下那些风格或怪异，或新颖，或震撼的，能够激发人们兴趣和供人们参考的网页。&lt;/p&gt;
+
+&lt;p&gt;除了他本人分享的一些网页之外，下面留言区也有很多被推荐的网页。&lt;/p&gt;
+
+&lt;h2 id=&#34;an-interesting-day-http-aninterestingday-com&#34;&gt;&lt;a href=&#34;http://aninterestingday.com/&#34;&gt;An Interesting Day&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;ROBIN对这个网页的本身类型和排版布置之间的协调给予了赞扬。 参考这个网页可以得到更好的如何设计排版和应对不同浏览设备的经验。&lt;/p&gt;
+
+&lt;h2 id=&#34;charlie-rose-http-charlierose-com&#34;&gt;&lt;a href=&#34;http://charlierose.com/&#34;&gt;Charlie Rose&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;此网页的字体选用别具一格。 而且在处理方式上运用到了&lt;a href=&#34;https://css-tricks.com/loading-web-fonts-with-the-web-font-loader/&#34;&gt;Flash of invisible text&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;persona-https-persona-co&#34;&gt;&lt;a href=&#34;https://persona.co/&#34;&gt;Persona&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;让人感到有趣的是此网页运用滚动事件和交互图片的方式。 在这里图片已经化身为了会说话的艺术品。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>enchant.js</title>
+      <link>https://lbowl.github.io/hugoblog/post/enchant_enchant-js/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/enchant_enchant-js/</guid>
+      <description>
+
+&lt;h1 id=&#34;enchant-http-enchantjs-com-是一款设计游戏和app的轻javascript框架&#34;&gt;&lt;a href=&#34;http://enchantjs.com/&#34;&gt;enchant&lt;/a&gt;是一款设计游戏和APP的轻JavaScript框架。&lt;/h1&gt;
+
+&lt;h1 id=&#34;试用及试译&#34;&gt;试用及试译&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;目录
+
+&lt;ul&gt;
+&lt;li&gt;开发基础&lt;/li&gt;
+&lt;li&gt;反序引索&lt;/li&gt;
+&lt;li&gt;重要点
+
+&lt;ul&gt;
+&lt;li&gt;基础模板&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;基础（绘画）
+
+&lt;ul&gt;
+&lt;li&gt;创建和删除场景&lt;/li&gt;
+&lt;li&gt;展示图片&lt;/li&gt;
+&lt;li&gt;展示文本&lt;/li&gt;
+&lt;li&gt;播放音频&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;地图
+
+&lt;ul&gt;
+&lt;li&gt;注意点&lt;/li&gt;
+&lt;li&gt;创建地图&lt;/li&gt;
+&lt;li&gt;障碍检测&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;精灵
+
+&lt;ul&gt;
+&lt;li&gt;移动精灵&lt;/li&gt;
+&lt;li&gt;旋转和尺寸&lt;/li&gt;
+&lt;li&gt;透明度&lt;/li&gt;
+&lt;li&gt;使用画布&lt;/li&gt;
+&lt;li&gt;冲突检测&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;标签（文本）
+
+&lt;ul&gt;
+&lt;li&gt;改变颜色和字体&lt;/li&gt;
+&lt;li&gt;移动标签&lt;/li&gt;
+&lt;li&gt;改变标签透明度&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;杂纪
+
+&lt;ul&gt;
+&lt;li&gt;改变场景背景色&lt;/li&gt;
+&lt;li&gt;改变游戏FPS&lt;/li&gt;
+&lt;li&gt;修改场景尺寸&lt;/li&gt;
+&lt;li&gt;在加载时改变场景显示&lt;/li&gt;
+&lt;li&gt;预加载元素&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To be contd&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>github中文文档乱码</title>
+      <link>https://lbowl.github.io/hugoblog/post/BOM_github%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%E4%B9%B1%E7%A0%81/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/BOM_github%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%E4%B9%B1%E7%A0%81/</guid>
+      <description>
+
+&lt;h1 id=&#34;markdown文件转html之后在firefox里显示乱码&#34;&gt;markdown文件转html之后在firefox里显示乱码&lt;/h1&gt;
+
+&lt;p&gt;firefox判断编码：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;根据HTML文件的BOM&lt;/li&gt;
+&lt;li&gt;根据HTML中命令指定的编码&lt;/li&gt;
+&lt;li&gt;用户在编辑时手动在菜单中指定&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;解决&#34;&gt;解决：&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;编辑时指定encoding - utf-8&lt;/li&gt;
+&lt;li&gt;在头部加入&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt; 
+ &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html;charset=utf-8&amp;quot;&amp;gt;
+ 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>git远程仓库</title>
+      <link>https://lbowl.github.io/hugoblog/post/git_git-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/git_git-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
+      <description>&lt;p&gt;解决：fatal: Not a git repository (or any of the parent directories): .git的方法：&lt;/p&gt;
+
+&lt;p&gt;git init&lt;/p&gt;
+
+&lt;p&gt;添加别人的repo：&lt;/p&gt;
+
+&lt;p&gt;git remote add [repo name] [repo url]&lt;/p&gt;
+
+&lt;p&gt;git remote -v查看&lt;/p&gt;
+
+&lt;p&gt;git pull [repo name] [branch name]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>meta标签和-meta-property-og</title>
+      <link>https://lbowl.github.io/hugoblog/post/HTML_meta%E6%A0%87%E7%AD%BE-meta-property-og/</link>
+      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/HTML_meta%E6%A0%87%E7%AD%BE-meta-property-og/</guid>
+      <description>
+
+&lt;p&gt;#TITLE: meta标签-meta-property-og&lt;/p&gt;
+
+&lt;h1 id=&#34;meta标签&#34;&gt;meta标签&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;位于 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 与 &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; 之间&lt;/li&gt;
+&lt;li&gt;用户不可见&lt;/li&gt;
+&lt;li&gt;为搜索引擎robots定义页面主题，定义用户浏览器上的cookie&lt;/li&gt;
+&lt;li&gt;鉴别作者，设定格式，标注内容，定义行为等&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;name-属性&#34;&gt;name 属性&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;“Generator” 说明生成工具&lt;/li&gt;
+&lt;li&gt;“KEYWords” 网页关键词&lt;/li&gt;
+&lt;li&gt;“Description”&lt;/li&gt;
+&lt;li&gt;“Author”&lt;/li&gt;
+&lt;li&gt;“Robots”
+content=
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;all&amp;rdquo; 文件将被检索，且页面上的链接可以被查询&lt;/li&gt;
+&lt;li&gt;“none” 文件将不被检索，且页面上的链接不可以被查询&lt;/li&gt;
+&lt;li&gt;“index”文件将被检索&lt;/li&gt;
+&lt;li&gt;“follow”页面上的链接可以被查询&lt;/li&gt;
+&lt;li&gt;“noindex”文件将不被检索，但页面上的链接可以被查询&lt;/li&gt;
+&lt;li&gt;“nofollow”文件将被检索，但页面上的链接不可以被查询
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;http-equiv属性&#34;&gt;http-equiv属性&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;“Content-Type” 字符集&lt;/li&gt;
+&lt;li&gt;“Content-Language”语言&lt;/li&gt;
+&lt;li&gt;“Refresh”跳转&lt;/li&gt;
+&lt;li&gt;“Expires”指定到期时间&lt;/li&gt;
+&lt;li&gt;“set-cookie”设定cookie&lt;/li&gt;
+&lt;li&gt;“windows-Target”页面显示&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;og-open-graph-protocol-http-www-ogp-me&#34;&gt;og = &lt;a href=&#34;http://www.ogp.me/&#34;&gt;Open Graph Protocol&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;The Open Graph Protocol enables any web page to become a rich object in a social graph
+——此协议使网页成为富媒体对象。2010年F8会议上Facebook提出。同意网站内容被其他社会化网站引用，提高站外内容传播效率。&lt;/p&gt;
+
+&lt;p&gt;og:
+ - url
+ - title
+ - image
+ - description
+ - type
+ - video
+  - secure_url
+  - type
+  - width
+  - height&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
