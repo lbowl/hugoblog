@@ -1,0 +1,397 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Riddle">
+		<meta name="description" content="riddle&#39;s notes of front-end technology">
+		<meta name="generator" content="Hugo 0.16" />
+		<title>JWplayer &middot; Riddle&#39;s</title>
+		<link rel="shortcut icon" href="https://lbowl.github.io/hugoblog/images/favicon.ico">
+		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/style.css">
+		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/monosocialiconsfont.css">
+		
+
+		
+		<link href="https://lbowl.github.io/hugoblog/index.xml" rel="alternate" type="application/rss+xml" title="Riddle&#39;s" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://lbowl.github.io/hugoblog/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://lbowl.github.io/hugoblog/about'>About</a>
+	
+
+	
+	<a class="cta" href="https://lbowl.github.io/hugoblog/index.xml">Subscribe</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>JWplayer</h1>
+                    <h2 class="headline">
+                    September 8, 2016 
+                    <br>
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    
+
+<h1 id="jwplayer">JWplayer</h1>
+
+<ul>
+<li>注册一个账号</li>
+<li>本地上传MP4/FLV/AVI格式的视频或通过视频的URL上传，至Playlist</li>
+<li>修改视频的description、tag等信息；修改Player的样式信息</li>
+<li>调出publish mode，把EMBED处的代码复制粘贴至code里（分script和iframe两种）</li>
+<li>运行调试没有问题后，在dashboard板块下的analytics里追踪视频的信息。</li>
+</ul>
+
+<h1 id="jw-player-developer-guide-https-developer-jwplayer-com-jw-player-docs-developer-guide"><a href="https://developer.jwplayer.com/jw-player/docs/developer-guide/">JW Player Developer Guide</a></h1>
+
+<p>jwplayer说明文档的developer guide的Introduction和Intro to Javascript API部分。</p>
+
+<h2 id="介绍">介绍</h2>
+
+<p>Hello world！我们是JWPLAYER。我们致力于使（你这样的）开发者与设计者为网页、手机、OTT电视的观众建设、个性化、发布最佳观赏体验的视频。</p>
+
+<h3 id="目标">目标</h3>
+
+<p>我们希望提供一份使用JWPLAYER高级功能的说明文档。你将获得巩固的API和设计资源检索以加快你的播放器开发进程。</p>
+
+<h3 id="目标用户">目标用户</h3>
+
+<p>此页主要面向在工程中使用JWPLAYER的开发者和设计者。需了解标准设定和如何嵌入播放器，请参考<a href="https://support.jwplayer.com/">支持文档</a>。如果你要浏览开发者页，则需要基础的JAVASCRIPT能力以使用API，且需要CSS知识以丰富基础的模型。</p>
+
+<h3 id="结构">结构</h3>
+
+<p>此开发指导分为两块：JAVASCRIPT API（即将到来）和视觉优化。每部分包含起步、说明文档、示例代码、小样链接、附加资源。</p>
+
+<h3 id="联系我们">联系我们</h3>
+
+<p>如果在开发者页找不到你需要的资源：
+ - 我们定期管理<a href="https://stackoverflow.com/questions/tagged/jwplayer">StackOverflow</a>上的问题。
+ - 我们欢迎你为<a href="https://github.com/jwplayer/jwplayer">GITHUB</a>上的开源代码做贡献。
+ - 联系我们的TWITTER<a href="https://twitter.com/JWDevelopers">JWDevelopers</a>。
+ - 我们会通过邮件给予反馈（或者一个新的喵视频！）devrelation@jwplayer.com</p>
+
+<h2 id="javascript-api简介">JAVASCRIPT API简介</h2>
+
+<p>此文简介了如何使用JWPLAYER的<a href="http://www.jwplayer.com/products/jwplayer/javascript/">JAVASCRIPT API</a>。它可以使你增强你嵌入的播放器的功能，或者实现丰富的页面级别的交互。除非标注，否则Flash和HTML5 的API命令没有区别，因此你的代码可以跨技术域工作。
+注：我们强烈建议所有API命令在播放器准备完毕后运行。</p>
+
+<h3 id="通过jwplayer-api获取信息">通过JWPLAYER API获取信息</h3>
+
+<p>特定的API命令使用“get”前缀，标明它们的直接目的是返回特定信息。可以是对象，数组，字符串，数字。参考<a href="https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/">Javascript API Reference</a>查看返回形式。</p>
+
+<h4 id="get-api命令返回如下形式信息">&ldquo;GET&rdquo;API命令返回如下形式信息：</h4>
+
+<ul>
+<li>用jwplayer().getPlaylist()获得播放列表项目的数组；</li>
+<li>用jwplayer().getDuration()获得视频时长；</li>
+<li>用jwplayer().getsState()获得播放器状态；</li>
+<li>用jwplayer().getHeight()和jwplayer.getWidth()获得当前播放器的像素规模。</li>
+</ul>
+
+<h4 id="控制和设置jwplayer-api">控制和设置JWPLAYER API</h4>
+
+<p>以下命令用来控制播放器行为。大部分命令需要一个传入值。比如，setVolume()需要一个1-100的数字传入。</p>
+
+<h4 id="api命令可以使播放器">API命令可以使播放器：</h4>
+
+<ul>
+<li>用jwplayer().pause(true)停止播放；</li>
+<li>用jwplayer().setVolume(50)设置音量为50%；</li>
+<li>用jwplayer().seek(120)获得视频2分钟的位置。</li>
+</ul>
+
+<h3 id="通过jwplayer-api实现事件监听">通过JWPLAYER API实现事件监听</h3>
+
+<p>播放器做什么的时候会触发特定事件。JWP7基于<a href="http://backbonejs.org/#Events">backbone.events</a>实现事件结构。使一个播放器实例成为事件引导并给予开发者更好的选项和控制。特定事件同样返回信息。指定信息在<a href="https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/">javascript API reference</a>文档中。
+目前JWP支持以下事件驱动：
+<img src="http://o7o0hlenq.bkt.clouddn.com/listener.png" alt="" /></p>
+
+<p>以下事件驱动在每次音量改动时触发，并返回一个带名叫&rdquo;volume&rdquo;的数字的对象。</p>
+
+<pre><code>
+jwplayer().on('volume', function(e) {
+
+    alert(&quot;Volume is changed to: &quot;+ e.volume);
+
+                                    });
+
+</code></pre>
+
+<h3 id="示例-使用jwp">示例：使用JWP</h3>
+
+<p>player setup需要在实现播放器互动前安装。<a href="https://support.jwplayer.com/customer/portal/topics/601065-embedding/articles">Embedding Section</a>包含许多例子。这是一个基础播放器嵌入的标准语法：</p>
+
+<pre><code>
+&lt;div id='myElement'&gt;Loading the player...&lt;/div&gt; 
+
+&lt;script type='text/javascript'&gt;
+
+jwplayer(&quot;myElement&quot;).setup({ 
+
+    &quot;file&quot;: &quot;/uploads/example.mp4&quot;, 
+
+    &quot;image&quot;: &quot;/uploads/example.jpg&quot;
+
+});
+
+&lt;/script&gt;
+
+</code></pre>
+
+<p>一旦实现setup，API立刻就能用。如果你的页面内有一个播放器，它总能被playerInstance函数获取。比如：</p>
+
+<pre><code>
+&lt;script&gt;
+
+jwplayer(&quot;myElement&quot;).on('complete', function(){
+
+    alert(&quot;Complete fired - Your content has completed!&quot;);
+
+});
+
+&lt;/script&gt;
+
+&lt;a href=&quot;javascript:jwplayer('myElement').play();&quot;&gt;Toggle playback&lt;/a&gt;
+
+&lt;a href=&quot;javascript:alert('The volume of the player is: ' + jwplayer('myElement').getVolume());&quot;&gt;Report volume&lt;/a&gt;
+
+</code></pre>
+
+<h3 id="多个播放器下指定">多个播放器下指定</h3>
+
+<p>当页面内有多个播放器，你需要指定你要和哪个交互。假设我们一个页面内嵌入了两个不同的播放器：</p>
+
+<pre><code>
+&lt;div id='myFirstPlayer'&gt;Loading the first player...&lt;/div&gt;
+
+&lt;div id='mySecondPlayer'&gt;Loading the player...&lt;/div&gt;
+
+
+&lt;script type='text/javascript'&gt;
+
+jwplayer(&quot;myFirstPlayer&quot;).setup({ 
+
+    &quot;file&quot;: &quot;/uploads/example.mp4&quot;, 
+
+    &quot;image&quot;: &quot;/uploads/example.jpg&quot;
+
+});
+
+jwplayer(&quot;mySecondPlayer&quot;).setup({ 
+
+    &quot;file&quot;: &quot;/uploads/example2.mp4&quot;, 
+
+    &quot;image&quot;: &quot;/uploads/example2.jpg&quot;
+
+});
+
+&lt;/script&gt;
+
+</code></pre>
+
+<p>有两种方法来指定一个播放器：
+ * 使用div的id</p>
+
+<pre><code>
+// ID references the first player
+
+jwplayer(&quot;myFirstPlayer&quot;).play();
+
+</code></pre>
+
+<ul>
+<li>使用播放器index</li>
+</ul>
+
+<pre><code>
+// An index of 1 targets the second player on the page 
+
+jwplayer(1).play();
+
+</code></pre>
+
+<p>注：什么都不标明的话，将指向页面内第一个播放器。</p>
+
+<h3 id="require-js和jwplayer">Require.js和JWPLAYER</h3>
+
+<p>JWPLAYER目前不被require js支持因为JWPLAYER需要自己的命名空间。避免require和jwplayer.js在同一页面时的问题，在require.js之前加载jwplayer.js。
+例：</p>
+
+<pre><code>
+&lt;script src='jwplayer.js'&gt;
+
+&lt;script src='requirejs.js'&gt;
+
+</code></pre>
+
+<h3 id="小记表">小记表</h3>
+
+<p>这张表是所有API命令的小抄。<a href="https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/">JAVASCRIPT API Reference</a>包含了所有API命令的参数。点击相应类名转到对应查询。为了简化，我们只介绍on事件。如上所述，还可以是off,once,trigger事件。</p>
+
+<p><img src="http://o7o0hlenq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160524153029.png" alt="" /></p>
+
+<p><img src="http://o7o0hlenq.bkt.clouddn.com/sheet2.png" alt="" /></p>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                
+                        <img class="avatar" src="https://lbowl.github.io/hugoblog/images/avatar.png">
+                        <div>
+                            <span class="dark">Riddle</span>
+                            <span></span>
+                        </div>
+                    
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flbowl.github.io%2fhugoblog%2fpost%2fjwplayer_JWplayer-developer-guide%2f - JWplayer "><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E4%BF%A1%E8%B5%96%E5%85%B3%E7%B3%BB%E5%B8%A6%E6%9D%A5%E5%A2%9E%E5%80%BCvs%E4%BF%A1%E4%BB%BB%E5%8D%B1%E6%9C%BA%E5%B8%A6%E6%9D%A5%E6%94%BE%E5%BC%83/">一个好的PM比任何人都需要良好的责任感和信用度<aside class="dates">Oct 8</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E6%B2%9F%E9%80%9A%E5%AF%B9%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%88%90%E6%9C%AC%E7%9A%84%E5%BD%B1%E5%93%8D/">沟通对项目管理成本的影响<aside class="dates">Oct 8</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7Trello/">任务管理工具Trello<aside class="dates">Oct 6</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E4%BA%86%E8%A7%A3%E4%B8%80%E4%BA%9B%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/">了解一些设计规范<aside class="dates">Oct 4</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90%E7%A4%BE%E5%8C%BA%E7%9A%84%E4%B8%80%E7%AF%87%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/">关于音乐社区的一篇竞品分析<aside class="dates">Oct 4</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/Lily%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">Lily的思维导图<aside class="dates">Oct 3</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/DeviceOne/">DeviceOne<aside class="dates">Sep 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/Hugo/">Hugo<aside class="dates">Sep 10</aside></a>
+        </li>
+        
+   
+    
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/fullpage_Fullpage-js/">Fullpage.js<aside class="dates">Sep 8</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.dribbble.com/">
+        roundeddribble
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Riddle
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://lbowl.github.io/hugoblog/js/main.js"></script>
+<script src="https://lbowl.github.io/hugoblog/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>

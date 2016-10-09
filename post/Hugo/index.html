@@ -1,0 +1,267 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Riddle">
+		<meta name="description" content="riddle&#39;s notes of front-end technology">
+		<meta name="generator" content="Hugo 0.16" />
+		<title>Hugo &middot; Riddle&#39;s</title>
+		<link rel="shortcut icon" href="https://lbowl.github.io/hugoblog/images/favicon.ico">
+		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/style.css">
+		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/monosocialiconsfont.css">
+		
+
+		
+		<link href="https://lbowl.github.io/hugoblog/index.xml" rel="alternate" type="application/rss+xml" title="Riddle&#39;s" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='https://lbowl.github.io/hugoblog/'> <span class="arrow">←</span>Home</a>
+	
+
+	
+		<a href='https://lbowl.github.io/hugoblog/about'>About</a>
+	
+
+	
+	<a class="cta" href="https://lbowl.github.io/hugoblog/index.xml">Subscribe</a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Hugo</h1>
+                    <h2 class="headline">
+                    September 10, 2016 
+                    <br>
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    
+
+<p>There&rsquo;re many alternatives for a blog&rsquo;s generator,such as wordpress,hexo,hugo&hellip;They generate static site for the user to deploy.I have typically used three types of those generators: hexo,viki,hugo.</p>
+
+<h1 id="hugo-https-gohugo-io"><a href="https://gohugo.io/">Hugo</a></h1>
+
+<p>Hugo is a static site generator written in Go.
+Here is its repo on github:<a href="https://github.com/spf13/hugo/">hugo</a></p>
+
+<p>This blog you are visiting is deployed on github pages thus if you want to deploy a blog like this, an assumption is that you are equipped with <code>Git</code>, <code>nodejs</code>,a github account,along with some knowledge of basic operations on linux.</p>
+
+<p>The <a href="https://gohugo.io/overview/quickstart/">tutorials</a> on hugo&rsquo;s official site is very detailed and easy to read.</p>
+
+<pre><code>
+.
+|-- archetypes
+|-- config.toml
+|-- content
+|-- data
+|-- layouts
+`-- static
+
+5 directories, 1 file
+
+</code></pre>
+
+<blockquote>
+<p>The basic file tree of a hugo directory</p>
+</blockquote>
+
+<p>I built up my site through this tutorial very fluently,<em>the only problem i encountered was on my way to deploy it on github pages</em>.</p>
+
+<p>Initially i created a new repo under the same account which dominates my lyrics collection site,and they conflicted!It turned out that the <code>pre</code> and <code>next</code> link on my blog would led to a wrong way to my default repo on github.</p>
+
+<p>I solved this little tricky question using some kind of &ldquo;brute force&rdquo; strategy,i simply:</p>
+
+<ul>
+<li>Register a new github account</li>
+<li>Create a new repo for the blog</li>
+
+<li><p>Modified the <code>pagination.html</code> file under <code>themes/layouts/partials</code></p>
+
+<ol>
+<li>Reference to the official site:<a href="https://gohugo.io/extras/pagination#build-the-navigation">Build the navigation</a>
+<img src="http://o7o0hlenq.bkt.clouddn.com/95BE7874-0B18-438E-B093-42B24C69FE16.png" alt="" />
+<br /></li>
+</ol>
+
+<ul>
+<li><p>Here i noticed:
+<img src="http://o7o0hlenq.bkt.clouddn.com/9173F112-E758-4B22-BAA8-F781C6282ED5.png" alt="" /></p></li>
+
+<li><p>So the problem is caught!The pre and next links will locate the pages under the home directory,which caused the conflict.
+I tried:
+<img src="http://o7o0hlenq.bkt.clouddn.com/D3AFC6BE-9F64-43B1-A56E-0840B3098E20.png" alt="" />
+which can successfully solve the problem but seems a little ugly&hellip;</p></li>
+</ul></li>
+</ul>
+
+<h1 id="pros-and-cons">Pros and cons</h1>
+
+<ul>
+<li><p>The theme i&rsquo;m using parently is <a href="http://themes.gohugo.io/cactus/">cactus</a>.The reason i abort hexo for hugo is that i used to think <em>hugo&rsquo;s theme is prettier</em>.</p></li>
+
+<li><p>hugo has no default theme thus you can use your first theme directly without changing the config file.</p></li>
+
+<li><p>hugo has a <code>live view</code> function so you can watch your changes without refresh the site.</p></li>
+
+<li><p>hugo doesn&rsquo;t have an integrated <code>deploy</code> function while hexo has the <code>hexo d -g</code> command to deploy
+the site conveniently.In hugo,you have to use the common git operations to deploy your site.</p></li>
+</ul>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                
+                        <img class="avatar" src="https://lbowl.github.io/hugoblog/images/avatar.png">
+                        <div>
+                            <span class="dark">Riddle</span>
+                            <span></span>
+                        </div>
+                    
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flbowl.github.io%2fhugoblog%2fpost%2fHugo%2f - Hugo "><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+    
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E4%BF%A1%E8%B5%96%E5%85%B3%E7%B3%BB%E5%B8%A6%E6%9D%A5%E5%A2%9E%E5%80%BCvs%E4%BF%A1%E4%BB%BB%E5%8D%B1%E6%9C%BA%E5%B8%A6%E6%9D%A5%E6%94%BE%E5%BC%83/">一个好的PM比任何人都需要良好的责任感和信用度<aside class="dates">Oct 8</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E6%B2%9F%E9%80%9A%E5%AF%B9%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%88%90%E6%9C%AC%E7%9A%84%E5%BD%B1%E5%93%8D/">沟通对项目管理成本的影响<aside class="dates">Oct 8</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7Trello/">任务管理工具Trello<aside class="dates">Oct 6</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E4%BA%86%E8%A7%A3%E4%B8%80%E4%BA%9B%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/">了解一些设计规范<aside class="dates">Oct 4</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/%E5%85%B3%E4%BA%8E%E9%9F%B3%E4%B9%90%E7%A4%BE%E5%8C%BA%E7%9A%84%E4%B8%80%E7%AF%87%E7%AB%9E%E5%93%81%E5%88%86%E6%9E%90/">关于音乐社区的一篇竞品分析<aside class="dates">Oct 4</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/Lily%E7%9A%84%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">Lily的思维导图<aside class="dates">Oct 3</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/DeviceOne/">DeviceOne<aside class="dates">Sep 17</aside></a>
+        </li>
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/Hugo/">Hugo<aside class="dates">Sep 10</aside></a>
+        </li>
+        
+   
+    
+        
+   
+    
+        
+        <li>
+            <a href="https://lbowl.github.io/hugoblog/post/fullpage_Fullpage-js/">Fullpage.js<aside class="dates">Sep 8</aside></a>
+        </li>
+        
+   
+</ul>
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    
+    <a class="symbol" href="https://www.dribbble.com/">
+        roundeddribble
+    </a>
+    
+    <a class="symbol" href="https://www.facebook.com/">
+        roundedfacebook
+    </a>
+    
+    <a class="symbol" href="https://www.github.com/">
+        roundedgithub
+    </a>
+    
+    <a class="symbol" href="https://www.twitter.com/">
+        roundedtwitterbird
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2016 Riddle
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://lbowl.github.io/hugoblog/js/main.js"></script>
+<script src="https://lbowl.github.io/hugoblog/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>
