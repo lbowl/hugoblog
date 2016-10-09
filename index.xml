@@ -6,8 +6,18 @@
     <description>Recent content on Riddle&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Oct 2016 23:38:41 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Oct 2016 01:44:27 +0800</lastBuildDate>
     <atom:link href="https://lbowl.github.io/hugoblog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>我的朋友给我的礼物</title>
+      <link>https://lbowl.github.io/hugoblog/post/%E6%88%91%E7%9A%84%E6%9C%8B%E5%8F%8B%E7%BB%99%E6%88%91%E7%9A%84%E7%A4%BC%E7%89%A9/</link>
+      <pubDate>Mon, 10 Oct 2016 01:44:27 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/%E6%88%91%E7%9A%84%E6%9C%8B%E5%8F%8B%E7%BB%99%E6%88%91%E7%9A%84%E7%A4%BC%E7%89%A9/</guid>
+      <description>&lt;p&gt;谢谢，我很喜欢！&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>一个好的PM比任何人都需要良好的责任感和信用度</title>
@@ -1389,77 +1399,6 @@ html {
 &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width; initial-scale=1.0&amp;quot;&amp;gt;
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Some fonts reference</title>
-      <link>https://lbowl.github.io/hugoblog/post/hexo_Hexo%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9/</link>
-      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
-      
-      <guid>https://lbowl.github.io/hugoblog/post/hexo_Hexo%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9/</guid>
-      <description>
-
-&lt;h1 id=&#34;some-fonts-references&#34;&gt;Some fonts references&lt;/h1&gt;
-
-&lt;h2 id=&#34;chinese-fonts&#34;&gt;Chinese fonts&lt;/h2&gt;
-
-&lt;p&gt;Typically chinese font names are not allowed in css thus use the following sheet as a reference:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
- 新细明体：PMingLiU  
- 细明体：MingLiU 
- 标楷体：DFKai-SB  
- 黑体：SimHei 
- 宋体：SimSun 
- 新宋体：NSimSun  
- 仿宋：FangSong  
- 楷体：KaiTi 
- 仿宋_GB2312：FangSong_GB2312  
- 楷体_GB2312：KaiTi_GB2312 
- 微软正黑体：Microsoft JhengHei  
- 微软雅黑体：Microsoft YaHei  
-
- 隶书：LiSu 
- 幼圆：YouYuan 
- 华文细黑：STXihei 
- 华文楷体：STKaiti  
- 华文宋体：STSong 
- 华文中宋：STZhongsong  
- 华文仿宋：STFangsong  
- 方正舒体：FZShuTi  
- 方正姚体：FZYaoti  
- 华文彩云：STCaiyun  
- 华文琥珀：STHupo 
- 华文隶书：STLiti 
- 华文行楷：STXingkai  
- 华文新魏：STXinwei  
-
- 华文细黑：STHeiti Light [STXihei]  
- 华文黑体：STHeiti 
- 华文楷体：STKaiti 
- 华文宋体：STSong 
- 华文仿宋：STFangsong 
- 丽黑 Pro：LiHei Pro Medium 
- 丽宋 Pro：LiSong Pro Light  
- 标楷体：BiauKai 
- 苹果丽中黑：Apple LiGothic Medium  
- 苹果丽细宋：Apple LiSung Light 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;download-fonts&#34;&gt;Download fonts&lt;/h2&gt;
-
-&lt;p&gt;Choose fonts from these websites and download for free
-&lt;a href=&#34;www.showfont.net&#34;&gt;showfont&lt;/a&gt;
-&lt;a href=&#34;www.dafont.com&#34;&gt;dafont&lt;/a&gt;
-&lt;a href=&#34;www.ddfont.com&#34;&gt;ddfont&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;modifying-hexo&#34;&gt;Modifying(hexo)&lt;/h1&gt;
-
-&lt;p&gt;Modify the corresponding css files in themes/layout directories has been failed on my machine.
-I made it by changing the style.css file in &amp;lsquo;public&amp;rsquo;folder in my hexo directory.
-Basically add the font name which you want to use in &amp;lsquo;font-family&amp;rsquo; attr before any other font names.&lt;/p&gt;
 </description>
     </item>
     
