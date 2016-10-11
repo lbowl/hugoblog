@@ -7,7 +7,7 @@
 		<meta name="author" content="Riddle">
 		<meta name="description" content="riddle&#39;s notes of front-end technology">
 		<meta name="generator" content="Hugo 0.16" />
-		<title>元素垂直居中 &middot; Riddle&#39;s</title>
+		<title>Lily功能梳理初稿 &middot; Riddle&#39;s</title>
 		<link rel="shortcut icon" href="https://lbowl.github.io/hugoblog/images/favicon.ico">
 		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/style.css">
 		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/highlight.css">
@@ -41,112 +41,15 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>元素垂直居中</h1>
+                    <h1>Lily功能梳理初稿</h1>
                     <h2 class="headline">
-                    September 8, 2016 
+                    October 11, 2016 
                     <br>
                     
                     </h2>
                 </header>
                 <section id="post-body">
                     
-
-<h1 id="一般方法">一般方法</h1>
-
-<h2 id="单行文字设置">单行文字设置</h2>
-
-<pre><code>
- {line-height = 外部容器高度} 
- 
-</code></pre>
-
-<h2 id="多行文字-图片">多行文字，图片</h2>
-
-<ul>
-<li>父容器</li>
-</ul>
-
-<pre><code>
-div {
-    display:table-cell;
-    vertical-align:middle
-    } 
-    
-</code></pre>
-
-<p>并设置固定高度</p>
-
-<ul>
-<li>内部</li>
-</ul>
-
-<pre><code>
-span {
-    display:inline-block;
-    vertical-align:middle
-    } 
-
-</code></pre>
-
-<p>或</p>
-
-<pre><code>
-img {
-    vertical-align:middle
-    } 
-
-</code></pre>
-
-<h2 id="或者">或者</h2>
-
-<ul>
-<li>内部</li>
-</ul>
-
-<pre><code>
-#content { 
-    position:absolute; 
-    top:50%; 
-    height:240px; 
-    margin-top:-120px/*内部高的一半*/ 
-    } 
-
-</code></pre>
-
-<blockquote>
-<p>其他类似方法也是在固定高度的情况下设置top:50%以及margin为负。注意内部元素溢出overflow的情况。</p>
-</blockquote>
-
-<h1 id="补充">补充</h1>
-
-<h2 id="使用transform">使用transform</h2>
-
-<p>可以使用</p>
-
-<pre><code>
-{transform: translate(-50%,-50%);} 
-
-</code></pre>
-
-<p>取代设margin为负。</p>
-
-<h2 id="固定高度的内部元素">固定高度的内部元素</h2>
-
-<p>设置</p>
-
-<pre><code>
-{ 
-    top：0; 
-    bottom：0; 
-    margin: auto; 
-} 
-
-</code></pre>
-
-<h2 id="参考">参考</h2>
-
-<p><a href="https://www.qianduan.net/css-to-achieve-the-vertical-center-of-the-five-kinds-of-methods/">前段观察</a></p>
-
                 </section>
             </article>
             <footer id="post-meta" class="clearfix">
@@ -158,7 +61,7 @@ img {
                         </div>
                     
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flbowl.github.io%2fhugoblog%2fpost%2fHTML_%25E5%2585%2583%25E7%25B4%25A0%25E5%25B1%2585%25E4%25B8%25AD%25E5%259E%2582%25E7%259B%25B4%25E6%2598%25BE%25E7%25A4%25BA%2f - %e5%85%83%e7%b4%a0%e5%9e%82%e7%9b%b4%e5%b1%85%e4%b8%ad "><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flbowl.github.io%2fhugoblog%2fpost%2fLily%25E5%258A%259F%25E8%2583%25BD%25E6%25A2%25B3%25E7%2590%2586%25E5%2588%259D%25E7%25A8%25BF%2f - Lily%e5%8a%9f%e8%83%bd%e6%a2%b3%e7%90%86%e5%88%9d%e7%a8%bf "><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
