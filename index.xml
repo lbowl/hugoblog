@@ -15,7 +15,120 @@
       <pubDate>Tue, 11 Oct 2016 23:51:37 +0800</pubDate>
       
       <guid>https://lbowl.github.io/hugoblog/post/Lily%E5%8A%9F%E8%83%BD%E6%A2%B3%E7%90%86%E5%88%9D%E7%A8%BF/</guid>
-      <description></description>
+      <description>
+
+&lt;h1 id=&#34;基本功能板块&#34;&gt;基本功能板块&lt;/h1&gt;
+
+&lt;h2 id=&#34;logo&#34;&gt;LOGO&lt;/h2&gt;
+
+&lt;p&gt;内容为“LILY”的logo，设计简洁，点击后展开导航菜单。&lt;/p&gt;
+
+&lt;h2 id=&#34;导航菜单&#34;&gt;导航菜单&lt;/h2&gt;
+
+&lt;p&gt;默认隐藏，歌曲播放时半透明显示，点击logo后滑出，包含四个模块：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FM&lt;/li&gt;
+&lt;li&gt;推荐&lt;/li&gt;
+&lt;li&gt;所有歌曲&lt;/li&gt;
+&lt;li&gt;上传歌曲&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;动态变化的背景&#34;&gt;动态变化的背景&lt;/h2&gt;
+
+&lt;p&gt;参照桌面版网易云音乐／QQ音乐的歌曲播放主界面的背景处理方式，即对专辑图片的放大，虚化和渲染，并且参考&lt;a href=&#34;http://nipponcolors.com/#sakuranezumi&#34;&gt;NIPPON COLORS&lt;/a&gt;的变化效果，实现lily在歌曲切换或者在歌曲播放时，背景色调／图片的变换。&lt;/p&gt;
+
+&lt;h2 id=&#34;登录-注册-游客&#34;&gt;登录/注册/游客&lt;/h2&gt;
+
+&lt;p&gt;为登录的用户身份为游客，游客可以：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;发表弹幕&lt;/li&gt;
+&lt;li&gt;发表评论&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;已注册未完成邮箱验证的用户，可以上传图片；&lt;/p&gt;
+
+&lt;p&gt;完成邮箱验证的用户，可以上传歌曲。&lt;/p&gt;
+
+&lt;h2 id=&#34;播放列表&#34;&gt;播放列表&lt;/h2&gt;
+
+&lt;p&gt;游客和已登录用户都可以在点击播放一首歌曲后，立即创建当前播放列表并添加当前歌曲；&lt;/p&gt;
+
+&lt;p&gt;游客的列表在关闭页面后清空，已登录用户的列表将被保存。&lt;/p&gt;
+
+&lt;h2 id=&#34;评论区&#34;&gt;评论区&lt;/h2&gt;
+
+&lt;p&gt;评论板块包含：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;发表评论&lt;/li&gt;
+&lt;li&gt;图片评论&lt;/li&gt;
+&lt;li&gt;显示评论总数&lt;/li&gt;
+&lt;li&gt;精彩评论&lt;/li&gt;
+&lt;li&gt;最新评论&lt;/li&gt;
+&lt;li&gt;对评论点赞&lt;/li&gt;
+&lt;li&gt;回复某条评论&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;主体区域&#34;&gt;主体区域&lt;/h1&gt;
+
+&lt;p&gt;无论是在何种播放模式下，页面的主体部分都被等分成三个区域，分别是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;播放器区 &lt;!--FM播放模式和正常播放模式，不必设计两套播放器，采用一致的播放器即可--&gt;
+
+&lt;ul&gt;
+&lt;li&gt;显示歌曲名，歌手名，专辑名，时长；&lt;/li&gt;
+&lt;li&gt;切换下一首&lt;/li&gt;
+&lt;li&gt;收藏按钮－－添加至播放列表&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;歌词区
+
+&lt;ul&gt;
+&lt;li&gt;点击可切换歌词是否滚动&lt;/li&gt;
+&lt;li&gt;不滚动－－对应评注区&lt;/li&gt;
+&lt;li&gt;滚动－－对应弹幕区&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;评注/弹幕区
+
+&lt;ul&gt;
+&lt;li&gt;参考genuis.com的评注方式&lt;/li&gt;
+&lt;li&gt;参考QQ音乐的弹幕形式&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;不同功能模块下的补充说明&#34;&gt;不同功能模块下的补充说明&lt;/h1&gt;
+
+&lt;h2 id=&#34;fm&#34;&gt;FM&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;播放器组件
+
+&lt;ul&gt;
+&lt;li&gt;垃圾箱功能，被放入垃圾箱的歌曲将从用户当前收听的频道的歌曲列表中移除&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;推荐&#34;&gt;推荐&lt;/h2&gt;
+
+&lt;p&gt;推荐的分类和歌曲内容由后台控制&lt;/p&gt;
+
+&lt;h2 id=&#34;所有歌曲&#34;&gt;所有歌曲&lt;/h2&gt;
+
+&lt;p&gt;采用LQIP – Low Quality Image Placeholders技术 （虽然是2013年的了）&lt;/p&gt;
+
+&lt;h2 id=&#34;上传歌曲&#34;&gt;上传歌曲&lt;/h2&gt;
+
+&lt;p&gt;仿照之前实现的湿湿娘的视频搬运功能，已登录的用户可以上传歌曲，上传时必需的相关信息是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;歌曲名&lt;/li&gt;
+&lt;li&gt;歌手名&lt;/li&gt;
+&lt;li&gt;专辑名&lt;/li&gt;
+&lt;li&gt;歌曲文件&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -24,7 +137,35 @@
       <pubDate>Tue, 11 Oct 2016 23:51:16 +0800</pubDate>
       
       <guid>https://lbowl.github.io/hugoblog/post/MyProjectOneAssignment/</guid>
-      <description></description>
+      <description>
+
+&lt;h1 id=&#34;description&#34;&gt;Description&lt;/h1&gt;
+
+&lt;p&gt;I find myself interested in internet software engineering, front-end technology and internet product management when i was in grade 2.&lt;/p&gt;
+
+&lt;p&gt;My passion for those skills drove me to learn many basic skills related to front-end technology at first, such as html, css, javascript, ajax, jQuery…it’s easy to get familiar with these skills, but it’s hard to be a master of them.&lt;/p&gt;
+
+&lt;p&gt;When i was at a higher level, i started to use some front-end tools such as bootstrap or element to build up a website quickly, or use echarts to implement data visualization, or use fullpage to insert one-page sections in my website.&lt;/p&gt;
+
+&lt;p&gt;My next step is to get a web server of my own and bind my domain    to it. I made it by looking for free host in “wanwang” and luckily received a free one for two year’s ownership. I bought my domain in “wanwang” as well, which cost no more than 50 RMB each year.&lt;/p&gt;
+
+&lt;p&gt;At present, i’m using a ftp tool — FileZilla to manage my home site. All i need to do is to set up my site with the correct IP address and password, connect my computer to it, then i can upload or delete files in my host.&lt;/p&gt;
+
+&lt;p&gt;After the formation of my home site has been done, i used  a fast and flexible static site generator — hugo to generate my blog, which is used to save up all my experience and progress during my study and work as a front-end engineer and a product manager.&lt;/p&gt;
+
+&lt;p&gt;Another site generator — hexo has been used to build up my lyrics collection site for a japanese singer, i simply just chose the right template, modified its config and did some beautifications by css and js.&lt;/p&gt;
+
+&lt;p&gt;I’m working on a project called “Lily” as a product manager with a friend who acts as the engineer, this website will provide people with functions such as listening to their favorite singer’s FM radio, make comments and share their stories.&lt;/p&gt;
+
+&lt;p&gt;All those works mentioned above are deployed on github and i’m using git to control these remotes.&lt;/p&gt;
+
+&lt;h1 id=&#34;snapshots&#34;&gt;Snapshots&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/FE66A652-FA07-40AA-A9CD-67F949071E20.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/FE8AC9C6-7207-4432-A5AF-FF46FE9D71DA.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/40DA7AAC-3AEF-48B5-8743-8B6A8BCC56FD.png&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/090658EC-9FDD-4A6D-AE9F-C23C5DDF664E.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

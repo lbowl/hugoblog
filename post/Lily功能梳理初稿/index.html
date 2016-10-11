@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Riddle">
-		<meta name="description" content="riddle&#39;s notes of front-end technology">
+		<meta name="description" content="riddle&#39;s notes">
 		<meta name="generator" content="Hugo 0.16" />
 		<title>Lily功能梳理初稿 &middot; Riddle&#39;s</title>
 		<link rel="shortcut icon" href="https://lbowl.github.io/hugoblog/images/favicon.ico">
@@ -50,6 +50,119 @@
                 </header>
                 <section id="post-body">
                     
+
+<h1 id="基本功能板块">基本功能板块</h1>
+
+<h2 id="logo">LOGO</h2>
+
+<p>内容为“LILY”的logo，设计简洁，点击后展开导航菜单。</p>
+
+<h2 id="导航菜单">导航菜单</h2>
+
+<p>默认隐藏，歌曲播放时半透明显示，点击logo后滑出，包含四个模块：</p>
+
+<ul>
+<li>FM</li>
+<li>推荐</li>
+<li>所有歌曲</li>
+<li>上传歌曲</li>
+</ul>
+
+<h2 id="动态变化的背景">动态变化的背景</h2>
+
+<p>参照桌面版网易云音乐／QQ音乐的歌曲播放主界面的背景处理方式，即对专辑图片的放大，虚化和渲染，并且参考<a href="http://nipponcolors.com/#sakuranezumi">NIPPON COLORS</a>的变化效果，实现lily在歌曲切换或者在歌曲播放时，背景色调／图片的变换。</p>
+
+<h2 id="登录-注册-游客">登录/注册/游客</h2>
+
+<p>为登录的用户身份为游客，游客可以：</p>
+
+<ul>
+<li>发表弹幕</li>
+<li>发表评论</li>
+</ul>
+
+<p>已注册未完成邮箱验证的用户，可以上传图片；</p>
+
+<p>完成邮箱验证的用户，可以上传歌曲。</p>
+
+<h2 id="播放列表">播放列表</h2>
+
+<p>游客和已登录用户都可以在点击播放一首歌曲后，立即创建当前播放列表并添加当前歌曲；</p>
+
+<p>游客的列表在关闭页面后清空，已登录用户的列表将被保存。</p>
+
+<h2 id="评论区">评论区</h2>
+
+<p>评论板块包含：</p>
+
+<ul>
+<li>发表评论</li>
+<li>图片评论</li>
+<li>显示评论总数</li>
+<li>精彩评论</li>
+<li>最新评论</li>
+<li>对评论点赞</li>
+<li>回复某条评论</li>
+</ul>
+
+<h1 id="主体区域">主体区域</h1>
+
+<p>无论是在何种播放模式下，页面的主体部分都被等分成三个区域，分别是：</p>
+
+<ul>
+<li>播放器区 <!--FM播放模式和正常播放模式，不必设计两套播放器，采用一致的播放器即可-->
+
+<ul>
+<li>显示歌曲名，歌手名，专辑名，时长；</li>
+<li>切换下一首</li>
+<li>收藏按钮－－添加至播放列表</li>
+</ul></li>
+<li>歌词区
+
+<ul>
+<li>点击可切换歌词是否滚动</li>
+<li>不滚动－－对应评注区</li>
+<li>滚动－－对应弹幕区</li>
+</ul></li>
+<li>评注/弹幕区
+
+<ul>
+<li>参考genuis.com的评注方式</li>
+<li>参考QQ音乐的弹幕形式</li>
+</ul></li>
+</ul>
+
+<h1 id="不同功能模块下的补充说明">不同功能模块下的补充说明</h1>
+
+<h2 id="fm">FM</h2>
+
+<ul>
+<li>播放器组件
+
+<ul>
+<li>垃圾箱功能，被放入垃圾箱的歌曲将从用户当前收听的频道的歌曲列表中移除</li>
+</ul></li>
+</ul>
+
+<h2 id="推荐">推荐</h2>
+
+<p>推荐的分类和歌曲内容由后台控制</p>
+
+<h2 id="所有歌曲">所有歌曲</h2>
+
+<p>采用LQIP – Low Quality Image Placeholders技术 （虽然是2013年的了）</p>
+
+<h2 id="上传歌曲">上传歌曲</h2>
+
+<p>仿照之前实现的湿湿娘的视频搬运功能，已登录的用户可以上传歌曲，上传时必需的相关信息是：</p>
+
+<ul>
+<li>歌曲名</li>
+<li>歌手名</li>
+<li>专辑名</li>
+<li>歌曲文件</li>
+</ul>
+
                 </section>
             </article>
             <footer id="post-meta" class="clearfix">
@@ -165,7 +278,7 @@
         roundedfacebook
     </a>
     
-    <a class="symbol" href="https://www.github.com/">
+    <a class="symbol" href="https://github.com/riddledle/">
         roundedgithub
     </a>
     
