@@ -6,8 +6,52 @@
     <description>Recent content in Posts on Riddle&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Oct 2016 23:51:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Oct 2016 01:16:26 +0800</lastBuildDate>
     <atom:link href="https://lbowl.github.io/hugoblog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>四点小建议</title>
+      <link>https://lbowl.github.io/hugoblog/post/%E5%9B%9B%E7%82%B9%E5%B0%8F%E5%BB%BA%E8%AE%AE/</link>
+      <pubDate>Sun, 16 Oct 2016 01:16:26 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/%E5%9B%9B%E7%82%B9%E5%B0%8F%E5%BB%BA%E8%AE%AE/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;功能互相关联，不要造孤岛&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“互相关联”在他的解释下就是酷狗的“听唱看玩”的集成&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;产品去引领用户，而不是单纯依赖调研&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这貌似需要点创造力，研究用户心理吧，被动变主动&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注重用户体验，回归产品&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;嗯…… 看细节咯！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;关注底层大众（屌丝宅男），但产品保持高大上&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;要用长得像林志玲的产品去赚宅男的钱&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;对酷狗音乐的蝰蛇音效和桌面歌词效果印象比较深刻，这些还是比较走在前沿的，预测“听唱看玩”大杂烩的酷狗是走视频内容社区方向&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lily功能梳理初稿</title>
@@ -1106,54 +1150,6 @@ jwplayer(1).play();
 &lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160524153029.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/sheet2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pandoc</title>
-      <link>https://lbowl.github.io/hugoblog/post/Pandoc_Pandoc/</link>
-      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
-      
-      <guid>https://lbowl.github.io/hugoblog/post/Pandoc_Pandoc/</guid>
-      <description>
-
-&lt;h1 id=&#34;使用-pandoc-http-www-pandoc-org-getting-started-html-实现markdown文件和html文件之间的转换&#34;&gt;使用&lt;a href=&#34;http://www.pandoc.org/getting-started.html&#34;&gt;Pandoc&lt;/a&gt;实现markdown文件和html文件之间的转换。&lt;/h1&gt;
-
-&lt;h1 id=&#34;参考官方文档-以windows系统为例&#34;&gt;参考官方文档，以windows系统为例。&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;安装。（WIN8系统下建议在命令提示符下以管理员身份运行安装程序）&lt;/li&gt;
-&lt;li&gt;打开命令提示符&lt;/li&gt;
-&lt;li&gt;切换目录。
-
-&lt;ul&gt;
-&lt;li&gt;cd Documents 至文档目录下&lt;/li&gt;
-&lt;li&gt;mkdir &amp;lt;目录名&amp;gt; 新建目录文件夹&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;在命令行转换。
-
-&lt;ul&gt;
-&lt;li&gt;输入pandoc&lt;/li&gt;
-&lt;li&gt;输入markdown/html语法文档&lt;/li&gt;
-&lt;li&gt;按下Ctrl-Z，回车
-(默认是认为传入markdown语法，转换为html语法)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;使用编辑器在目录下编辑一个文件&lt;/li&gt;
-&lt;li&gt;使用语法&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt; 
- pandoc test1.md -f markdown -t html -s -o test1.html 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;转换&lt;/p&gt;
-
-&lt;h1 id=&#34;查看-user-s-guide-http-www-pandoc-org-readme-html-获取更多关于转换格式的内容&#34;&gt;查看&lt;a href=&#34;http://www.pandoc.org/README.html&#34;&gt;User&amp;rsquo;s Guide&lt;/a&gt;获取更多关于转换格式的内容。&lt;/h1&gt;
-
-&lt;p&gt;若是想转为PDF格式，需要&lt;a href=&#34;http://www.latex-project.org/&#34;&gt;Latex&lt;/a&gt;支持。&lt;/p&gt;
-
-&lt;h1 id=&#34;将markdown文件转换为pdf文件则可以使用-mdcharm-http-www-mdcharm-com&#34;&gt;将markdown文件转换为pdf文件则可以使用&lt;a href=&#34;http://www.mdcharm.com/&#34;&gt;MdCharm&lt;/a&gt;。&lt;/h1&gt;
 </description>
     </item>
     

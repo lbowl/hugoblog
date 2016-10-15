@@ -6,8 +6,52 @@
     <description>Recent content on Riddle&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Oct 2016 23:51:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Oct 2016 01:16:26 +0800</lastBuildDate>
     <atom:link href="https://lbowl.github.io/hugoblog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>四点小建议</title>
+      <link>https://lbowl.github.io/hugoblog/post/%E5%9B%9B%E7%82%B9%E5%B0%8F%E5%BB%BA%E8%AE%AE/</link>
+      <pubDate>Sun, 16 Oct 2016 01:16:26 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/%E5%9B%9B%E7%82%B9%E5%B0%8F%E5%BB%BA%E8%AE%AE/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;功能互相关联，不要造孤岛&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“互相关联”在他的解释下就是酷狗的“听唱看玩”的集成&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;产品去引领用户，而不是单纯依赖调研&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;这貌似需要点创造力，研究用户心理吧，被动变主动&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注重用户体验，回归产品&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;嗯…… 看细节咯！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;关注底层大众（屌丝宅男），但产品保持高大上&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;要用长得像林志玲的产品去赚宅男的钱&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;对酷狗音乐的蝰蛇音效和桌面歌词效果印象比较深刻，这些还是比较走在前沿的，预测“听唱看玩”大杂烩的酷狗是走视频内容社区方向&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lily功能梳理初稿</title>
@@ -906,216 +950,6 @@ h1.nine {
 } 
 
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JWplayer</title>
-      <link>https://lbowl.github.io/hugoblog/post/jwplayer_JWplayer-developer-guide/</link>
-      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
-      
-      <guid>https://lbowl.github.io/hugoblog/post/jwplayer_JWplayer-developer-guide/</guid>
-      <description>
-
-&lt;h1 id=&#34;jwplayer&#34;&gt;JWplayer&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;注册一个账号&lt;/li&gt;
-&lt;li&gt;本地上传MP4/FLV/AVI格式的视频或通过视频的URL上传，至Playlist&lt;/li&gt;
-&lt;li&gt;修改视频的description、tag等信息；修改Player的样式信息&lt;/li&gt;
-&lt;li&gt;调出publish mode，把EMBED处的代码复制粘贴至code里（分script和iframe两种）&lt;/li&gt;
-&lt;li&gt;运行调试没有问题后，在dashboard板块下的analytics里追踪视频的信息。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;jw-player-developer-guide-https-developer-jwplayer-com-jw-player-docs-developer-guide&#34;&gt;&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/&#34;&gt;JW Player Developer Guide&lt;/a&gt;&lt;/h1&gt;
-
-&lt;p&gt;jwplayer说明文档的developer guide的Introduction和Intro to Javascript API部分。&lt;/p&gt;
-
-&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
-
-&lt;p&gt;Hello world！我们是JWPLAYER。我们致力于使（你这样的）开发者与设计者为网页、手机、OTT电视的观众建设、个性化、发布最佳观赏体验的视频。&lt;/p&gt;
-
-&lt;h3 id=&#34;目标&#34;&gt;目标&lt;/h3&gt;
-
-&lt;p&gt;我们希望提供一份使用JWPLAYER高级功能的说明文档。你将获得巩固的API和设计资源检索以加快你的播放器开发进程。&lt;/p&gt;
-
-&lt;h3 id=&#34;目标用户&#34;&gt;目标用户&lt;/h3&gt;
-
-&lt;p&gt;此页主要面向在工程中使用JWPLAYER的开发者和设计者。需了解标准设定和如何嵌入播放器，请参考&lt;a href=&#34;https://support.jwplayer.com/&#34;&gt;支持文档&lt;/a&gt;。如果你要浏览开发者页，则需要基础的JAVASCRIPT能力以使用API，且需要CSS知识以丰富基础的模型。&lt;/p&gt;
-
-&lt;h3 id=&#34;结构&#34;&gt;结构&lt;/h3&gt;
-
-&lt;p&gt;此开发指导分为两块：JAVASCRIPT API（即将到来）和视觉优化。每部分包含起步、说明文档、示例代码、小样链接、附加资源。&lt;/p&gt;
-
-&lt;h3 id=&#34;联系我们&#34;&gt;联系我们&lt;/h3&gt;
-
-&lt;p&gt;如果在开发者页找不到你需要的资源：
- - 我们定期管理&lt;a href=&#34;https://stackoverflow.com/questions/tagged/jwplayer&#34;&gt;StackOverflow&lt;/a&gt;上的问题。
- - 我们欢迎你为&lt;a href=&#34;https://github.com/jwplayer/jwplayer&#34;&gt;GITHUB&lt;/a&gt;上的开源代码做贡献。
- - 联系我们的TWITTER&lt;a href=&#34;https://twitter.com/JWDevelopers&#34;&gt;JWDevelopers&lt;/a&gt;。
- - 我们会通过邮件给予反馈（或者一个新的喵视频！）devrelation@jwplayer.com&lt;/p&gt;
-
-&lt;h2 id=&#34;javascript-api简介&#34;&gt;JAVASCRIPT API简介&lt;/h2&gt;
-
-&lt;p&gt;此文简介了如何使用JWPLAYER的&lt;a href=&#34;http://www.jwplayer.com/products/jwplayer/javascript/&#34;&gt;JAVASCRIPT API&lt;/a&gt;。它可以使你增强你嵌入的播放器的功能，或者实现丰富的页面级别的交互。除非标注，否则Flash和HTML5 的API命令没有区别，因此你的代码可以跨技术域工作。
-注：我们强烈建议所有API命令在播放器准备完毕后运行。&lt;/p&gt;
-
-&lt;h3 id=&#34;通过jwplayer-api获取信息&#34;&gt;通过JWPLAYER API获取信息&lt;/h3&gt;
-
-&lt;p&gt;特定的API命令使用“get”前缀，标明它们的直接目的是返回特定信息。可以是对象，数组，字符串，数字。参考&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/&#34;&gt;Javascript API Reference&lt;/a&gt;查看返回形式。&lt;/p&gt;
-
-&lt;h4 id=&#34;get-api命令返回如下形式信息&#34;&gt;&amp;ldquo;GET&amp;rdquo;API命令返回如下形式信息：&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;用jwplayer().getPlaylist()获得播放列表项目的数组；&lt;/li&gt;
-&lt;li&gt;用jwplayer().getDuration()获得视频时长；&lt;/li&gt;
-&lt;li&gt;用jwplayer().getsState()获得播放器状态；&lt;/li&gt;
-&lt;li&gt;用jwplayer().getHeight()和jwplayer.getWidth()获得当前播放器的像素规模。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;控制和设置jwplayer-api&#34;&gt;控制和设置JWPLAYER API&lt;/h4&gt;
-
-&lt;p&gt;以下命令用来控制播放器行为。大部分命令需要一个传入值。比如，setVolume()需要一个1-100的数字传入。&lt;/p&gt;
-
-&lt;h4 id=&#34;api命令可以使播放器&#34;&gt;API命令可以使播放器：&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;用jwplayer().pause(true)停止播放；&lt;/li&gt;
-&lt;li&gt;用jwplayer().setVolume(50)设置音量为50%；&lt;/li&gt;
-&lt;li&gt;用jwplayer().seek(120)获得视频2分钟的位置。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;通过jwplayer-api实现事件监听&#34;&gt;通过JWPLAYER API实现事件监听&lt;/h3&gt;
-
-&lt;p&gt;播放器做什么的时候会触发特定事件。JWP7基于&lt;a href=&#34;http://backbonejs.org/#Events&#34;&gt;backbone.events&lt;/a&gt;实现事件结构。使一个播放器实例成为事件引导并给予开发者更好的选项和控制。特定事件同样返回信息。指定信息在&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/&#34;&gt;javascript API reference&lt;/a&gt;文档中。
-目前JWP支持以下事件驱动：
-&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/listener.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;以下事件驱动在每次音量改动时触发，并返回一个带名叫&amp;rdquo;volume&amp;rdquo;的数字的对象。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-jwplayer().on(&#39;volume&#39;, function(e) {
-
-    alert(&amp;quot;Volume is changed to: &amp;quot;+ e.volume);
-
-                                    });
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;示例-使用jwp&#34;&gt;示例：使用JWP&lt;/h3&gt;
-
-&lt;p&gt;player setup需要在实现播放器互动前安装。&lt;a href=&#34;https://support.jwplayer.com/customer/portal/topics/601065-embedding/articles&#34;&gt;Embedding Section&lt;/a&gt;包含许多例子。这是一个基础播放器嵌入的标准语法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;div id=&#39;myElement&#39;&amp;gt;Loading the player...&amp;lt;/div&amp;gt; 
-
-&amp;lt;script type=&#39;text/javascript&#39;&amp;gt;
-
-jwplayer(&amp;quot;myElement&amp;quot;).setup({ 
-
-    &amp;quot;file&amp;quot;: &amp;quot;/uploads/example.mp4&amp;quot;, 
-
-    &amp;quot;image&amp;quot;: &amp;quot;/uploads/example.jpg&amp;quot;
-
-});
-
-&amp;lt;/script&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;一旦实现setup，API立刻就能用。如果你的页面内有一个播放器，它总能被playerInstance函数获取。比如：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;script&amp;gt;
-
-jwplayer(&amp;quot;myElement&amp;quot;).on(&#39;complete&#39;, function(){
-
-    alert(&amp;quot;Complete fired - Your content has completed!&amp;quot;);
-
-});
-
-&amp;lt;/script&amp;gt;
-
-&amp;lt;a href=&amp;quot;javascript:jwplayer(&#39;myElement&#39;).play();&amp;quot;&amp;gt;Toggle playback&amp;lt;/a&amp;gt;
-
-&amp;lt;a href=&amp;quot;javascript:alert(&#39;The volume of the player is: &#39; + jwplayer(&#39;myElement&#39;).getVolume());&amp;quot;&amp;gt;Report volume&amp;lt;/a&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;多个播放器下指定&#34;&gt;多个播放器下指定&lt;/h3&gt;
-
-&lt;p&gt;当页面内有多个播放器，你需要指定你要和哪个交互。假设我们一个页面内嵌入了两个不同的播放器：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;div id=&#39;myFirstPlayer&#39;&amp;gt;Loading the first player...&amp;lt;/div&amp;gt;
-
-&amp;lt;div id=&#39;mySecondPlayer&#39;&amp;gt;Loading the player...&amp;lt;/div&amp;gt;
-
-
-&amp;lt;script type=&#39;text/javascript&#39;&amp;gt;
-
-jwplayer(&amp;quot;myFirstPlayer&amp;quot;).setup({ 
-
-    &amp;quot;file&amp;quot;: &amp;quot;/uploads/example.mp4&amp;quot;, 
-
-    &amp;quot;image&amp;quot;: &amp;quot;/uploads/example.jpg&amp;quot;
-
-});
-
-jwplayer(&amp;quot;mySecondPlayer&amp;quot;).setup({ 
-
-    &amp;quot;file&amp;quot;: &amp;quot;/uploads/example2.mp4&amp;quot;, 
-
-    &amp;quot;image&amp;quot;: &amp;quot;/uploads/example2.jpg&amp;quot;
-
-});
-
-&amp;lt;/script&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;有两种方法来指定一个播放器：
- * 使用div的id&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-// ID references the first player
-
-jwplayer(&amp;quot;myFirstPlayer&amp;quot;).play();
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;使用播放器index&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;
-// An index of 1 targets the second player on the page 
-
-jwplayer(1).play();
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;注：什么都不标明的话，将指向页面内第一个播放器。&lt;/p&gt;
-
-&lt;h3 id=&#34;require-js和jwplayer&#34;&gt;Require.js和JWPLAYER&lt;/h3&gt;
-
-&lt;p&gt;JWPLAYER目前不被require js支持因为JWPLAYER需要自己的命名空间。避免require和jwplayer.js在同一页面时的问题，在require.js之前加载jwplayer.js。
-例：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;script src=&#39;jwplayer.js&#39;&amp;gt;
-
-&amp;lt;script src=&#39;requirejs.js&#39;&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;小记表&#34;&gt;小记表&lt;/h3&gt;
-
-&lt;p&gt;这张表是所有API命令的小抄。&lt;a href=&#34;https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/&#34;&gt;JAVASCRIPT API Reference&lt;/a&gt;包含了所有API命令的参数。点击相应类名转到对应查询。为了简化，我们只介绍on事件。如上所述，还可以是off,once,trigger事件。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/QQ%E5%9B%BE%E7%89%8720160524153029.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/sheet2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
