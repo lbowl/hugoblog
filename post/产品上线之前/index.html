@@ -7,7 +7,7 @@
 		<meta name="author" content="Riddle">
 		<meta name="description" content="riddle&#39;s notes">
 		<meta name="generator" content="Hugo 0.16" />
-		<title>VIKI页面 &middot; Riddle&#39;s</title>
+		<title>整个开发流程的大致梳理 &middot; Riddle&#39;s</title>
 		<link rel="shortcut icon" href="https://lbowl.github.io/hugoblog/images/favicon.ico">
 		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/style.css">
 		<link rel="stylesheet" href="https://lbowl.github.io/hugoblog/css/highlight.css">
@@ -41,37 +41,67 @@
         <section id="wrapper">
             <article class="post">
                 <header>
-                    <h1>VIKI页面</h1>
+                    <h1>整个开发流程的大致梳理</h1>
                     <h2 class="headline">
-                    September 8, 2016 
+                    October 20, 2016 
                     <br>
                     
                     </h2>
                 </header>
                 <section id="post-body">
-                    
+                    <p>最近一段时间外卖手机APP的项目进入了开发的收尾阶段，进行了问题的集中，调试，测试。</p>
 
-<h1 id="安装viki">安装VIKI</h1>
+<p>团队协作的项目非常追求效率，但并不是要牺牲质量。</p>
 
-<h2 id="配置">配置</h2>
+<p>仅是在一个小型外包工作室中，我学到的即是：一个商业项目的客户对项目完成的速度和质量要求是很严格的，作为执行者的我们并不是要牺牲哪一方去成就另一方，而是在开发的整个流程的每个阶段，都谨慎地为这两者效力，从代码角度来看，在开发流程的：</p>
 
-<p>Vim+deplate</p>
-
-<h2 id="使用">使用</h2>
+<p><strong>开发前期：</strong></p>
 
 <ul>
-<li>编辑一套模板，可参考<a href="http://edyfox.codecarver.org/html/viki_template.html">edyfox</a>的。</li>
-<li>创建.viki文件，可以TAG_FILENAME.VIKI格式命名。</li>
-<li>使用Vim编辑。可在开头第一行加入#TITLE: TITLE 指定页面标题，第二行加入#KEYWORDS: KEYWORDS 指定该页标签</li>
-<li>使用VIKI语法撰写页面内容</li>
-<li>在命令行执行deplate -t TEMPLATE.html &ndash;css CSSNAME FILENAME.viki生成html文件；也可执行此<a href="http://edyfox.codecarver.org/html/viki_script.html#labVikiScript">编译脚本</a>批量编译
+<li><p>科学的系统架构能够为项目在以后的开发过程中省下大笔沟通和维护成本；</p></li>
 
-<ul>
-<li>注意输出目录。可修改TARGET_DIR一行</li>
-<li>注意文字编码。可修改ARGS一行
-<br /></li>
-</ul></li>
+<li><p>目录的构建应该要遵循规范（层级结构，类别），不应该偷懒或者图省事简化目录结构，因为这样可能会使以后的维护成本大大提高；</p></li>
+
+<li><p>开发时的代码／调试测试的代码／正式发布的代码，应该划分明确，这样什么时候需要什么版本的代码就比较清晰了。</p></li>
 </ul>
+
+<p><strong>正式开发：</strong></p>
+
+<ul>
+<li><p>本地测试的代码不要提交版本库，提交的代码应该是正式的，测试完毕的；</p></li>
+
+<li><p>提交代码时的commit尽量详细准确，便于追踪代码更新的历史和进行版本管理；</p></li>
+
+<li><p>良好的代码习惯（完整的注释，接口的封装，正确的命名方式）；</p></li>
+
+<li><p><strong>开发产品的某一特定功能时，遇到涉及性能或者架构的问题时应该（让产品经理）和其他开发人员沟通，找到最好最快的方式；</strong></p></li>
+</ul>
+
+<blockquote>
+<p>比如在这个项目中，在完成“收藏商家”这一功能时，需求是“点击收藏商家按钮，按钮变为实心状，用户在进入已收藏商家主页时，收藏按钮应作相应变化”，前端在开发这个任务时，需要检查当前用户的收藏列表里是否有当前商家，而后端返回的接口里是没有这一数据的，那么前端就需要去检查一遍用户的收藏商家列表，这样网络访问就需要两遍，前端是需要尽量减少网络请求次数的，后端则是要尽量减少数据接口的，那么当时这个问题就被抛出了，最终的解决方案落实为该功能的重构，也就是后端的调整。</p>
+</blockquote>
+
+<p><strong>调试测试：</strong></p>
+
+<p>前期的工作做得比较到位，开发时严谨高效的话，调试测试阶段耗费的精力将相对较少，但是我认为这一阶段是所有开发流程中最为重要的。在调试测试的过程中，不仅需要对以往工作的回顾总结，也需要对产品在功能性，体验性等方面的提升空间的摸索。调试测试时，重点对以下几个方面进行检查：</p>
+
+<ul>
+<li><p>BUG检查：或许要消灭所有bug是不可能的，甚至用来进行开发的工具自身都带有bug也不一定，但是需要知道的是这些bug是什么，在哪里，严重程度，可修复性；</p></li>
+
+<li><p>性能优化：性能的优化是在功能全部实现的前提下进行的，仅仅实现是不够的，在网络连接速度，数据获取速度等方面需要尽量优化，比如上面提到的“收藏商家”的例子；</p></li>
+</ul>
+
+<blockquote>
+<p>优化性能时，除了考虑当前，还要考虑到以后的改动或者迭代，比如说，在优化一个“轮播点联动显示”的功能时，本身所有的轮播点是固定定位在轮播头底部某一位置的，但是轮播点的数量应该是对应轮播图片数量的，那么如果轮播图增加了，轮播点是否也应该相信增加并且做到完美的布局，所以这个任务完成之后，轮播点实现了自动靠右排列。</p>
+</blockquote>
+
+<ul>
+<li><strong>用户体验：在测试的过程中，以用户的身份去使用和体验产品，逻辑是否通顺，交互是否良好，细节是否完善，感受是怎样的，这些问题可以被自然地发现，从而得到修改优化。</strong></li>
+</ul>
+
+<blockquote>
+<p>比如在对整个APP的体验过程中，发现了动画显示不流畅，获取验证码按钮过小，等待页面显示时缺少加载动画等问题，这些问题只有在体验产品时才会被重视和提出，但往往这些问题对一款产品是否合格规范甚至完美是至关重要的。</p>
+</blockquote>
 
                 </section>
             </article>
@@ -84,7 +114,7 @@
                         </div>
                     
                 <section id="sharing">
-                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flbowl.github.io%2fhugoblog%2fpost%2fVIKI_viki%2f - VIKI%e9%a1%b5%e9%9d%a2 "><span class="icon-twitter"> Tweet</span></a>
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2flbowl.github.io%2fhugoblog%2fpost%2f%25E4%25BA%25A7%25E5%2593%2581%25E4%25B8%258A%25E7%25BA%25BF%25E4%25B9%258B%25E5%2589%258D%2f - %e6%95%b4%e4%b8%aa%e5%bc%80%e5%8f%91%e6%b5%81%e7%a8%8b%e7%9a%84%e5%a4%a7%e8%87%b4%e6%a2%b3%e7%90%86 "><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(

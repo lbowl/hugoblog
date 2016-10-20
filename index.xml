@@ -6,8 +6,108 @@
     <description>Recent content on Riddle&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Oct 2016 01:16:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Oct 2016 01:21:38 +0800</lastBuildDate>
     <atom:link href="https://lbowl.github.io/hugoblog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>整个开发流程的大致梳理</title>
+      <link>https://lbowl.github.io/hugoblog/post/%E4%BA%A7%E5%93%81%E4%B8%8A%E7%BA%BF%E4%B9%8B%E5%89%8D/</link>
+      <pubDate>Thu, 20 Oct 2016 01:21:38 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/%E4%BA%A7%E5%93%81%E4%B8%8A%E7%BA%BF%E4%B9%8B%E5%89%8D/</guid>
+      <description>&lt;p&gt;最近一段时间外卖手机APP的项目进入了开发的收尾阶段，进行了问题的集中，调试，测试。&lt;/p&gt;
+
+&lt;p&gt;团队协作的项目非常追求效率，但并不是要牺牲质量。&lt;/p&gt;
+
+&lt;p&gt;仅是在一个小型外包工作室中，我学到的即是：一个商业项目的客户对项目完成的速度和质量要求是很严格的，作为执行者的我们并不是要牺牲哪一方去成就另一方，而是在开发的整个流程的每个阶段，都谨慎地为这两者效力，从代码角度来看，在开发流程的：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;开发前期：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;科学的系统架构能够为项目在以后的开发过程中省下大笔沟通和维护成本；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;目录的构建应该要遵循规范（层级结构，类别），不应该偷懒或者图省事简化目录结构，因为这样可能会使以后的维护成本大大提高；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;开发时的代码／调试测试的代码／正式发布的代码，应该划分明确，这样什么时候需要什么版本的代码就比较清晰了。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;正式开发：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;本地测试的代码不要提交版本库，提交的代码应该是正式的，测试完毕的；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;提交代码时的commit尽量详细准确，便于追踪代码更新的历史和进行版本管理；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;良好的代码习惯（完整的注释，接口的封装，正确的命名方式）；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;开发产品的某一特定功能时，遇到涉及性能或者架构的问题时应该（让产品经理）和其他开发人员沟通，找到最好最快的方式；&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;比如在这个项目中，在完成“收藏商家”这一功能时，需求是“点击收藏商家按钮，按钮变为实心状，用户在进入已收藏商家主页时，收藏按钮应作相应变化”，前端在开发这个任务时，需要检查当前用户的收藏列表里是否有当前商家，而后端返回的接口里是没有这一数据的，那么前端就需要去检查一遍用户的收藏商家列表，这样网络访问就需要两遍，前端是需要尽量减少网络请求次数的，后端则是要尽量减少数据接口的，那么当时这个问题就被抛出了，最终的解决方案落实为该功能的重构，也就是后端的调整。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;调试测试：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;前期的工作做得比较到位，开发时严谨高效的话，调试测试阶段耗费的精力将相对较少，但是我认为这一阶段是所有开发流程中最为重要的。在调试测试的过程中，不仅需要对以往工作的回顾总结，也需要对产品在功能性，体验性等方面的提升空间的摸索。调试测试时，重点对以下几个方面进行检查：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;BUG检查：或许要消灭所有bug是不可能的，甚至用来进行开发的工具自身都带有bug也不一定，但是需要知道的是这些bug是什么，在哪里，严重程度，可修复性；&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;性能优化：性能的优化是在功能全部实现的前提下进行的，仅仅实现是不够的，在网络连接速度，数据获取速度等方面需要尽量优化，比如上面提到的“收藏商家”的例子；&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;优化性能时，除了考虑当前，还要考虑到以后的改动或者迭代，比如说，在优化一个“轮播点联动显示”的功能时，本身所有的轮播点是固定定位在轮播头底部某一位置的，但是轮播点的数量应该是对应轮播图片数量的，那么如果轮播图增加了，轮播点是否也应该相信增加并且做到完美的布局，所以这个任务完成之后，轮播点实现了自动靠右排列。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;用户体验：在测试的过程中，以用户的身份去使用和体验产品，逻辑是否通顺，交互是否良好，细节是否完善，感受是怎样的，这些问题可以被自然地发现，从而得到修改优化。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;比如在对整个APP的体验过程中，发现了动画显示不流畅，获取验证码按钮过小，等待页面显示时缺少加载动画等问题，这些问题只有在体验产品时才会被重视和提出，但往往这些问题对一款产品是否合格规范甚至完美是至关重要的。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lily桌面版v0.1</title>
+      <link>https://lbowl.github.io/hugoblog/post/Lily%E6%A1%8C%E9%9D%A2%E7%89%88v0.1/</link>
+      <pubDate>Thu, 20 Oct 2016 01:00:05 +0800</pubDate>
+      
+      <guid>https://lbowl.github.io/hugoblog/post/Lily%E6%A1%8C%E9%9D%A2%E7%89%88v0.1/</guid>
+      <description>
+
+&lt;h3 id=&#34;工具&#34;&gt;工具：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Azure 7.0&lt;/li&gt;
+&lt;li&gt;Element components&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;原则&#34;&gt;原则：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;风格清新&lt;/li&gt;
+&lt;li&gt;界面简洁&lt;/li&gt;
+&lt;li&gt;快速shuffle&lt;/li&gt;
+&lt;li&gt;突出评论&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;参考&#34;&gt;参考：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Element官网配色&lt;/li&gt;
+&lt;li&gt;豆瓣FM&lt;/li&gt;
+&lt;li&gt;网易云音乐桌面版播放器&lt;/li&gt;
+&lt;li&gt;网易云音乐私人FM&lt;/li&gt;
+&lt;li&gt;Genuis.com &amp;gt; Comments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://o7o0hlenq.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-10-19%20%E4%B8%8B%E5%8D%8810.54.09.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>四点小建议</title>
@@ -20,7 +120,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;“互相关联”在他的解释下就是酷狗的“听唱看玩”的集成&lt;/p&gt;
+&lt;p&gt;酷狗的“听唱看玩”的集成&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -28,7 +128,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;这貌似需要点创造力，研究用户心理吧，被动变主动&lt;/p&gt;
+&lt;p&gt;研究用户心理，被动变主动&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -36,7 +136,7 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;嗯…… 看细节咯！&lt;/p&gt;
+&lt;p&gt;没啥说&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
@@ -44,12 +144,8 @@
 &lt;/ul&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;要用长得像林志玲的产品去赚宅男的钱&lt;/p&gt;
+&lt;p&gt;“宅男还是喜欢林志玲的”&lt;/p&gt;
 &lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;对酷狗音乐的蝰蛇音效和桌面歌词效果印象比较深刻，这些还是比较走在前沿的，预测“听唱看玩”大杂烩的酷狗是走视频内容社区方向&lt;/p&gt;
 </description>
     </item>
     
@@ -223,7 +319,7 @@
     </item>
     
     <item>
-      <title>一个好的PM比任何人都需要良好的责任感和信用度</title>
+      <title>责任感和信用度</title>
       <link>https://lbowl.github.io/hugoblog/post/%E8%B4%A3%E4%BB%BB%E6%84%9F%E5%92%8C%E4%BF%A1%E7%94%A8%E5%BA%A6/</link>
       <pubDate>Sat, 08 Oct 2016 23:38:41 +0800</pubDate>
       
@@ -759,197 +855,6 @@ the site conveniently.In hugo,you have to use the common git operations to deplo
       
       <guid>https://lbowl.github.io/hugoblog/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m simply complex.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fullpage.js</title>
-      <link>https://lbowl.github.io/hugoblog/post/fullpage_Fullpage-js/</link>
-      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
-      
-      <guid>https://lbowl.github.io/hugoblog/post/fullpage_Fullpage-js/</guid>
-      <description>
-
-&lt;h1 id=&#34;简介&#34;&gt;简介&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/riddledle/fullPage.js&#34;&gt;Fullpage.js&lt;/a&gt; (github repository)是一个多浏览器兼容的插件&lt;/p&gt;
-
-&lt;h1 id=&#34;使用&#34;&gt;使用&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;包括jQuery library&lt;/li&gt;
-&lt;li&gt;包括jquery.fullpage.js/jquery.fullpage.min.js&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;包括jquery.fullpage.css&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;HTML结构&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;
- &amp;lt;div id=&amp;quot;fullpage&amp;quot;&amp;gt; 
-    &amp;lt;div class=&amp;quot;section active&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
-    &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
-    &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
-    &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt;Some section&amp;lt;/div&amp;gt; 
- &amp;lt;/div&amp;gt; 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;使用slider&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;
- &amp;lt;div class=&amp;quot;section&amp;quot;&amp;gt; 
-    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 1 &amp;lt;/div&amp;gt; 
-    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 2 &amp;lt;/div&amp;gt; 
-    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 3 &amp;lt;/div&amp;gt; 
-    &amp;lt;div class=&amp;quot;slide&amp;quot;&amp;gt; Slide 4 &amp;lt;/div&amp;gt; 
- &amp;lt;/div&amp;gt; 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;初始化&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;
- $(document).ready(function() { 
-    $(&#39;#fullpage&#39;).fullpage(); 
- }); 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;插入音频/视频
-使用 &lt;code&gt;data-autoplay&lt;/code&gt; 属性使音频/视频能够自动播放, &lt;code&gt;data-keepplaying&lt;/code&gt; 属性使离开某页时音频/视频继续播放。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;
- &amp;lt;audio data-autoplay&amp;gt; 
-    &amp;lt;source src=&amp;quot;http://metakoncept.hr/horse.ogg&amp;quot; type=&amp;quot;audio/ogg&amp;quot;&amp;gt; 
- &amp;lt;/audio&amp;gt; 
- 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;实例
-&lt;a href=&#34;http://www.yourprimer.com/&#34;&gt;google&lt;/a&gt;
-&lt;a href=&#34;https://mcdonalds.com.au/create-your-taste&#34;&gt;McDonalds&lt;/a&gt;
-&lt;a href=&#34;http://www.sony-asia.com/microsite/mdr-10/#ncPage&#34;&gt;sony&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Injecting a line break</title>
-      <link>https://lbowl.github.io/hugoblog/post/CSSTRICKS_Injecting-a-line-break-%E6%8F%92%E5%85%A5%E4%B8%80%E4%B8%AA%E8%BD%AC%E8%A1%8C/</link>
-      <pubDate>Thu, 08 Sep 2016 19:42:29 +0800</pubDate>
-      
-      <guid>https://lbowl.github.io/hugoblog/post/CSSTRICKS_Injecting-a-line-break-%E6%8F%92%E5%85%A5%E4%B8%80%E4%B8%AA%E8%BD%AC%E8%A1%8C/</guid>
-      <description>
-
-&lt;h1 id=&#34;如何插入一个转行-https-css-tricks-com-injecting-line-break-more-241954-来自css-tricks-com&#34;&gt;&lt;a href=&#34;https://css-tricks.com/injecting-line-break/#more-241954&#34;&gt;如何插入一个转行&lt;/a&gt;,来自CSS-TRICKS.COM&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&amp;lt;h1 class=&amp;quot;one&amp;quot;&amp;gt; 
-
-  Break right after this
-
-  &amp;lt;!-- &amp;lt;br&amp;gt; could go here, but can we do it with CSS? --&amp;gt;
-
-  &amp;lt;span&amp;gt;
-    and before this
-  &amp;lt;/span&amp;gt;
-
-&amp;lt;/h1&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;method-1-用-div-代替-span&#34;&gt;METHOD 1：用 &lt;code&gt;div&lt;/code&gt; 代替 &lt;code&gt;span&lt;/code&gt;&lt;/h2&gt;
-
-&lt;p&gt;BUT：块级元素的设计和行内元素的设计初衷相违背；&lt;/p&gt;
-
-&lt;h2 id=&#34;method-2-用伪元素-before-来完成-在文始加一个转义字符-a&#34;&gt;METHOD 2:用伪元素 &lt;code&gt;::before&lt;/code&gt; 来完成，在文始加一个转义字符 &lt;code&gt;\A&lt;/code&gt;&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;
-h1 span::before {
-
-  content: &amp;quot;\A&amp;quot;;
-
-} 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;BUT：这对行内元素来说没有用。&lt;/p&gt;
-
-&lt;h2 id=&#34;method-3-在以上方法下-使空白符有意义-即-white-space-pre&#34;&gt;METHOD 3:在以上方法下，使空白符有意义。即 &lt;code&gt;white-space:pre&lt;/code&gt;&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;
-h1.two span::before {
-
-  content: &amp;quot;\A&amp;quot;;
-
-  white-space: pre; 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;BUT：在第一行行末留下了一小块痕迹&lt;/p&gt;
-
-&lt;h2 id=&#34;method-4-将-span-先变为块级元素-然后用伪元素-before-来写入文字-并且设计它的内边距等样式&#34;&gt;METHOD 4:将 &lt;code&gt;span&lt;/code&gt; 先变为块级元素，然后用伪元素 &lt;code&gt;::before&lt;/code&gt; 来写入文字，并且设计它的内边距等样式。&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;
-h1 span {
-
-  display: block;
-
-}
-
-h1 span::before {
-
-  content: attr(data-text);
-
-  background: black;
-
-  padding: 1px 8px;
-
-} 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;method-5-直接设置-span-为-display-table&#34;&gt;METHOD 5：直接设置 &lt;code&gt;span&lt;/code&gt; 为 &lt;code&gt;display:table&lt;/code&gt;&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;
-h1 span {
-
-  display: table;
-
-} 
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;method-6-使用-flex-box&#34;&gt;METHOD 6:使用 &lt;code&gt;flex box&lt;/code&gt;&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;
-h1.nine {
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  span {
-
-        background: black;
-
-        padding: 1px 8px;
-
-  }
-
-} 
-
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
